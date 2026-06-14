@@ -1,0 +1,362 @@
+.
+├── alpine-temp
+│   ├── alpine-minirootfs-3.23.4-aarch64.tar.gz
+│   ├── kernel_tmp
+│   ├── linux-firmware.apk
+│   └── linux-lts.apk
+├── boot-files
+│   ├── Image
+│   ├── rk3326-r36ultra-linux.dtb
+│   └── uInitrd
+├── boot.ini
+├── copy-over
+│   ├── bios
+│   │   ├── bios.gg
+│   │   ├── bios_MD.bin
+│   │   ├── Databases
+│   │   │   ├── colecodb.xml
+│   │   │   ├── msxcaswavdb.xml
+│   │   │   ├── msxromdb.xml
+│   │   │   ├── msxsysromdb.xml
+│   │   │   ├── segadb.xml
+│   │   │   └── svidb.xml
+│   │   ├── fbneo
+│   │   │   └── hiscore.dat
+│   │   ├── gba_bios.bin
+│   │   ├── gb_bios.bin
+│   │   ├── gbc_bios.bin
+│   │   ├── mame2003
+│   │   │   ├── cheat.dat
+│   │   │   └── hiscore.dat
+│   │   ├── mame2003-plus
+│   │   │   ├── cheat.dat
+│   │   │   ├── hiscore.dat
+│   │   │   └── history.dat
+│   │   ├── neogeo.zip
+│   │   ├── PPSSPP
+│   │   │   ├── 7z.png
+│   │   │   ├── asciifont_atlas.meta
+│   │   │   ├── asciifont_atlas.zim
+│   │   │   ├── compat.ini
+│   │   │   ├── compatvr.ini
+│   │   │   ├── flash0
+│   │   │   │   └── font
+│   │   │   │       ├── jpn0.pgf
+│   │   │   │       ├── kr0.pgf
+│   │   │   │       ├── ltn0.pgf
+│   │   │   │       ├── ltn10.pgf
+│   │   │   │       ├── ltn11.pgf
+│   │   │   │       ├── ltn12.pgf
+│   │   │   │       ├── ltn13.pgf
+│   │   │   │       ├── ltn14.pgf
+│   │   │   │       ├── ltn15.pgf
+│   │   │   │       ├── ltn1.pgf
+│   │   │   │       ├── ltn2.pgf
+│   │   │   │       ├── ltn3.pgf
+│   │   │   │       ├── ltn4.pgf
+│   │   │   │       ├── ltn5.pgf
+│   │   │   │       ├── ltn6.pgf
+│   │   │   │       ├── ltn7.pgf
+│   │   │   │       ├── ltn8.pgf
+│   │   │   │       └── ltn9.pgf
+│   │   │   ├── font_atlas.meta
+│   │   │   ├── font_atlas.zim
+│   │   │   ├── gamecontrollerdb.txt
+│   │   │   ├── knownfuncs.ini
+│   │   │   ├── lang
+│   │   │   │   ├── ar_AE.ini
+│   │   │   │   ├── az_AZ.ini
+│   │   │   │   ├── bg_BG.ini
+│   │   │   │   ├── ca_ES.ini
+│   │   │   │   ├── cz_CZ.ini
+│   │   │   │   ├── da_DK.ini
+│   │   │   │   ├── de_DE.ini
+│   │   │   │   ├── dr_ID.ini
+│   │   │   │   ├── en_US.ini
+│   │   │   │   ├── es_ES.ini
+│   │   │   │   ├── es_LA.ini
+│   │   │   │   ├── fa_IR.ini
+│   │   │   │   ├── fi_FI.ini
+│   │   │   │   ├── fr_FR.ini
+│   │   │   │   ├── gl_ES.ini
+│   │   │   │   ├── gr_EL.ini
+│   │   │   │   ├── he_IL.ini
+│   │   │   │   ├── he_IL_invert.ini
+│   │   │   │   ├── hr_HR.ini
+│   │   │   │   ├── hu_HU.ini
+│   │   │   │   ├── id_ID.ini
+│   │   │   │   ├── it_IT.ini
+│   │   │   │   ├── ja_JP.ini
+│   │   │   │   ├── jv_ID.ini
+│   │   │   │   ├── ko_KR.ini
+│   │   │   │   ├── lo_LA.ini
+│   │   │   │   ├── lt-LT.ini
+│   │   │   │   ├── ms_MY.ini
+│   │   │   │   ├── nl_NL.ini
+│   │   │   │   ├── no_NO.ini
+│   │   │   │   ├── pl_PL.ini
+│   │   │   │   ├── pt_BR.ini
+│   │   │   │   ├── pt_PT.ini
+│   │   │   │   ├── README.md
+│   │   │   │   ├── ro_RO.ini
+│   │   │   │   ├── ru_RU.ini
+│   │   │   │   ├── sv_SE.ini
+│   │   │   │   ├── tg_PH.ini
+│   │   │   │   ├── th_TH.ini
+│   │   │   │   ├── tr_TR.ini
+│   │   │   │   ├── uk_UA.ini
+│   │   │   │   ├── vi_VN.ini
+│   │   │   │   ├── zh_CN.ini
+│   │   │   │   └── zh_TW.ini
+│   │   │   ├── langregion.ini
+│   │   │   ├── LICENSE.TXT
+│   │   │   ├── mime
+│   │   │   │   └── ppsspp.xml
+│   │   │   ├── ppge_atlas.meta
+│   │   │   ├── ppge_atlas.zim
+│   │   │   ├── rargray.png
+│   │   │   ├── redump.csv
+│   │   │   ├── Roboto-Condensed.ttf
+│   │   │   ├── sfx_achievement_unlocked.wav
+│   │   │   ├── sfx_back.wav
+│   │   │   ├── sfx_confirm.wav
+│   │   │   ├── sfx_leaderbord_submitted.wav
+│   │   │   ├── sfx_select.wav
+│   │   │   ├── sfx_toggle_off.wav
+│   │   │   ├── sfx_toggle_on.wav
+│   │   │   ├── shaders
+│   │   │   │   ├── 4xhqglsl.fsh
+│   │   │   │   ├── 4xhqglsl.vsh
+│   │   │   │   ├── 5xBR.fsh
+│   │   │   │   ├── 5xBR-lv2.fsh
+│   │   │   │   ├── 5xBR.vsh
+│   │   │   │   ├── aacolor.fsh
+│   │   │   │   ├── aacolor.vsh
+│   │   │   │   ├── bloom.fsh
+│   │   │   │   ├── bloomnoblur.fsh
+│   │   │   │   ├── cartoon.fsh
+│   │   │   │   ├── cartoon.vsh
+│   │   │   │   ├── checkers.fsh
+│   │   │   │   ├── colorcorrection.fsh
+│   │   │   │   ├── crt.fsh
+│   │   │   │   ├── defaultshaders.ini
+│   │   │   │   ├── fakereflections.fsh
+│   │   │   │   ├── fxaa.fsh
+│   │   │   │   ├── fxaa.vsh
+│   │   │   │   ├── GaussianDownscale.fsh
+│   │   │   │   ├── naturalA.fsh
+│   │   │   │   ├── naturalA.vsh
+│   │   │   │   ├── natural.fsh
+│   │   │   │   ├── natural.vsh
+│   │   │   │   ├── persistence.fsh
+│   │   │   │   ├── psp_color.fsh
+│   │   │   │   ├── scanlines.fsh
+│   │   │   │   ├── sharpen.fsh
+│   │   │   │   ├── stereo_red_blue.fsh
+│   │   │   │   ├── stereo_sbs.fsh
+│   │   │   │   ├── tex_2xbrz.csh
+│   │   │   │   ├── tex_4xbrz.csh
+│   │   │   │   ├── tex_mmpx.csh
+│   │   │   │   ├── upscale_bicubic.fsh
+│   │   │   │   ├── upscale_bicubic.vsh
+│   │   │   │   ├── upscale_spline36.fsh
+│   │   │   │   ├── upscale_spline36.vsh
+│   │   │   │   ├── videoAA.fsh
+│   │   │   │   └── vignette.fsh
+│   │   │   ├── themes
+│   │   │   │   └── defaultthemes.ini
+│   │   │   ├── ui_atlas.meta
+│   │   │   ├── ui_atlas.zim
+│   │   │   ├── unknown.png
+│   │   │   ├── vfpu
+│   │   │   │   ├── vfpu_asin_lut65536.dat
+│   │   │   │   ├── vfpu_asin_lut_deltas.dat
+│   │   │   │   ├── vfpu_asin_lut_indices.dat
+│   │   │   │   ├── vfpu_exp2_lut65536.dat
+│   │   │   │   ├── vfpu_exp2_lut.dat
+│   │   │   │   ├── vfpu_log2_lut65536.dat
+│   │   │   │   ├── vfpu_log2_lut65536_quadratic.dat
+│   │   │   │   ├── vfpu_log2_lut.dat
+│   │   │   │   ├── vfpu_rcp_lut.dat
+│   │   │   │   ├── vfpu_rsqrt_lut.dat
+│   │   │   │   ├── vfpu_sin_lut8192.dat
+│   │   │   │   ├── vfpu_sin_lut_delta.dat
+│   │   │   │   ├── vfpu_sin_lut_exceptions.dat
+│   │   │   │   ├── vfpu_sin_lut_interval_delta.dat
+│   │   │   │   └── vfpu_sqrt_lut.dat
+│   │   │   └── zip.png
+│   │   └── ps1
+│   │       ├── scph5500.bin
+│   │       ├── scph5501.bin
+│   │       └── scph5502.bin
+│   ├── ppsspp-assets
+│   │   ├── 7z.png
+│   │   ├── compat.ini
+│   │   ├── flash0
+│   │   │   └── font
+│   │   │       ├── jpn0.pgf
+│   │   │       ├── kr0.pgf
+│   │   │       ├── ltn0.pgf
+│   │   │       ├── ltn10.pgf
+│   │   │       ├── ltn11.pgf
+│   │   │       ├── ltn12.pgf
+│   │   │       ├── ltn13.pgf
+│   │   │       ├── ltn14.pgf
+│   │   │       ├── ltn15.pgf
+│   │   │       ├── ltn1.pgf
+│   │   │       ├── ltn2.pgf
+│   │   │       ├── ltn3.pgf
+│   │   │       ├── ltn4.pgf
+│   │   │       ├── ltn5.pgf
+│   │   │       ├── ltn6.pgf
+│   │   │       ├── ltn7.pgf
+│   │   │       ├── ltn8.pgf
+│   │   │       └── ltn9.pgf
+│   │   ├── gamecontrollerdb.txt
+│   │   ├── knownfuncs.ini
+│   │   ├── lang
+│   │   ├── langregion.ini
+│   │   ├── ppge_atlas.meta
+│   │   ├── ppge_atlas.zim
+│   │   ├── rargray.png
+│   │   ├── Roboto-Condensed.ttf
+│   │   ├── sfx_back.wav
+│   │   ├── sfx_confirm.wav
+│   │   ├── sfx_select.wav
+│   │   ├── sfx_toggle_off.wav
+│   │   ├── sfx_toggle_on.wav
+│   │   ├── shaders
+│   │   │   ├── 4xhqglsl.fsh
+│   │   │   ├── 4xhqglsl.vsh
+│   │   │   ├── 5xBR.fsh
+│   │   │   ├── 5xBR-lv2.fsh
+│   │   │   ├── 5xBR.vsh
+│   │   │   ├── aacolor.fsh
+│   │   │   ├── aacolor.vsh
+│   │   │   ├── bloom.fsh
+│   │   │   ├── cartoon.fsh
+│   │   │   ├── cartoon.vsh
+│   │   │   ├── colorcorrection.fsh
+│   │   │   ├── crt.fsh
+│   │   │   ├── defaultshaders.ini
+│   │   │   ├── fxaa.fsh
+│   │   │   ├── fxaa.vsh
+│   │   │   ├── GaussianDownscale.fsh
+│   │   │   ├── grayscale.fsh
+│   │   │   ├── inversecolors.fsh
+│   │   │   ├── naturalA.fsh
+│   │   │   ├── naturalA.vsh
+│   │   │   ├── natural.fsh
+│   │   │   ├── natural.vsh
+│   │   │   ├── psp_color.fsh
+│   │   │   ├── psp_color.ini
+│   │   │   ├── psp_color.vsh
+│   │   │   ├── scanlines.fsh
+│   │   │   ├── sharpen.fsh
+│   │   │   ├── tex_4xbrz.csh
+│   │   │   ├── upscale_spline36.fsh
+│   │   │   ├── upscale_spline36.vsh
+│   │   │   ├── videoAA.fsh
+│   │   │   └── vignette.fsh
+│   │   ├── shaders.zip
+│   │   ├── ui_atlas_lowmem.zim
+│   │   ├── ui_atlas.meta
+│   │   ├── ui_atlas.zim
+│   │   ├── unknown.png
+│   │   └── zip.png
+│   └── triggerhappy
+│       └── thd
+├── documents
+│   ├── changelog.md
+│   ├── MIGRATION_GUIDE.md
+│   ├── PRODUCTION_READY.md
+│   └── r36ultra_dtb_troubleshooting_report.md
+├── gui
+├── gui_logger.py
+├── logs
+│   └── pine_crash_report.txt
+├── pine_control_center.py
+├── pinere_crash_report.txt
+├── screenshots
+│   ├── gui_idea.jpeg
+│   ├── Screenshot_2026-06-05_14-34-51.png
+│   ├── Screenshot_2026-06-05_14-36-10.png
+│   ├── Screenshot_2026-06-05_15-54-40.png
+│   ├── Screenshot_2026-06-05_16-04-25.png
+│   ├── Screenshot_2026-06-05_16-38-55.png
+│   ├── Screenshot_2026-06-05_17-50-32.png
+│   ├── Screenshot_2026-06-05_18-03-40.png
+│   ├── Screenshot_2026-06-05_18-17-17.png
+│   ├── Screenshot_2026-06-05_19-08-10.png
+│   ├── Screenshot_2026-06-05_19-21-47.png
+│   └── Screenshot_2026-06-06_16-03-16.png
+├── scripts
+│   ├── 00-network.start
+│   ├── __pycache__
+│   │   └── r36-input-monitorcpython-311.pyc
+│   ├── r36-control
+│   ├── r36-input-monitor
+│   ├── r36-led-daemon.sh
+│   └── r36-led-util.sh
+├── setup_r36ultra.sh
+├── source
+│   ├── ArkOS-K36_repo
+│   │   ├── _config.yml
+│   │   ├── _layouts
+│   │   │   └── default.html
+│   │   ├── purple.bmp
+│   │   ├── README.md
+│   │   └── ScreenFiles_60hz
+│   │       ├── Panel 1
+│   │       │   ├── extlinux
+│   │       │   │   └── extlinux.conf
+│   │       │   └── rf3536k4ka.dtb
+│   │       ├── Panel 2
+│   │       │   ├── extlinux
+│   │       │   │   └── extlinux.conf
+│   │       │   └── rf3536k4ka.dtb
+│   │       ├── Panel 3
+│   │       │   ├── extlinux
+│   │       │   │   └── extlinux.conf
+│   │       │   └── rf3536k4ka.dtb
+│   │       ├── Panel 4
+│   │       │   ├── extlinux
+│   │       │   │   └── extlinux.conf
+│   │       │   └── rf3536k4ka.dtb
+│   │       ├── Panel 5
+│   │       │   ├── extlinux
+│   │       │   │   └── extlinux.conf
+│   │       │   └── rf3536k3ka.dtb
+│   │       ├── Panel 6
+│   │       │   ├── extlinux
+│   │       │   │   └── extlinux.conf
+│   │       │   └── rf3536k4ka.dtb
+│   │       └── Panel 7
+│   │           ├── extlinux
+│   │           │   └── extlinux.conf
+│   │           └── rf3536k4ka.dtb
+│   ├── example-boot-ini
+│   │   ├── android-boot.ini
+│   │   ├── arkosmultipanel-boot.ini
+│   │   ├── darkos-boot.ini
+│   │   ├── post-setup-modified-boot.ini
+│   │   ├── post-setup-script-boot-ini.ini
+│   │   └── rocknix-boot.ini
+│   ├── PRE_FLIGHT_CHECKS.sh
+│   ├── rk3326-r36ultra-linux.dts
+│   ├── scripts
+│   │   ├── 00-network.start
+│   │   ├── __pycache__
+│   │   │   └── r36-input-monitorcpython-311.pyc
+│   │   ├── r36-control
+│   │   ├── r36-input-monitor
+│   │   ├── r36-led-daemon.sh
+│   │   └── r36-led-util.sh
+│   ├── SW_XNL_R36_RTL8188FTV_Driver.zip
+│   └── tree.txt
+├── tree.txt
+└── u-boot
+    ├── idbloader.img
+    └── u-boot.itb
+
+53 directories, 307 files

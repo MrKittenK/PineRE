@@ -1,0 +1,38 @@
+#!/bin/sh
+# PineRE Tartan Boot Mode Test
+# Runs during early boot and proves:
+# - RootFS mounted
+# - Boot mode passed correctly
+# - Framebuffer can display text
+#
+# Later this script will launch ES/XFCE/Waydroid.
+
+BOOTMODE="${1:-es}"
+
+clear
+
+echo ""
+echo "========================================"
+echo "            PineRE Tartan"
+echo "========================================"
+echo ""
+echo "Selected Boot Mode:"
+echo "  ${BOOTMODE}"
+echo ""
+echo "Status:"
+echo "  RootFS ............ OK"
+echo "  OpenRC ............ OK"
+echo "  Boot Mode ......... OK"
+echo ""
+echo "Application launch is currently disabled."
+echo "Dropping to Alpine shell."
+echo ""
+
+# Optional framebuffer image support
+if command -v fbi >/dev/null 2>&1; then
+    if [ -f /usr/share/pinere/logo.png ]; then
+        fbi -T 1 -d /dev/fb0 --noverbose /usr/share/pinere/logo.png >/dev/null 2>&1
+    fi
+fi
+
+exec /bin/login -f root

@@ -1,0 +1,2362 @@
+[INFO] Running pre-flight checks...
+[INFO] ✓ All required commands available
+[INFO] ✓ Running as root
+[INFO] ✓ Working directory structure verified
+[INFO] 
+[INFO] Selecting target SD card device...
+[INFO] ✓ Device is valid: /dev/sdb
+[INFO] ✓ Device is not mounted
+[INFO] ✓ Device is not the root filesystem
+[INFO] Target partitions identified: /dev/sdb1, /dev/sdb2
+[WARN] 
+[WARN] FINAL WARNING: You are about to ERASE all data on: /dev/sdb
+[WARN] This operation CANNOT be undone.
+[ERROR] Operation cancelled by user
+[INFO] PineRE Compiler Engine initialized.
+[INFO] Target Device /dev/sdd validated.
+[INFO] Running pre-flight checks...
+[INFO] ✓ All required commands available
+[INFO] ✓ Running as root
+[FATAL] boot.ini not found in 
+[ERROR] Device not selected.
+[INFO] PineRE Compiler Engine initialized.
+[INFO] Target Device /dev/sdd validated.
+[INFO] Running pre-flight checks...
+[INFO] ✓ All required commands available
+[INFO] ✓ Running as root
+[FATAL] boot.ini not found in 
+[INFO] PineRE Compiler Engine initialized.
+[INFO] Target Device /dev/sdd validated.
+[INFO] Running pre-flight checks...
+[INFO] ✓ All required commands available
+[INFO] ✓ Running as root
+[FATAL] boot.ini not found in 
+[INFO] Engine initialized for target: /dev/sdd
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[INFO] Skipping U-Boot extraction (ensure idbloader/uboot exist if needed for bare metal)...
+[WARN] Erasing and Partitioning /dev/sdd...
+Error: Partition(s) on /dev/sdd are being used.
+[FATAL] Failed mklabel
+[INFO] Engine initialized for target: /dev/sdd
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[INFO] ========================================================
+[INFO] ✓ PINE-RE COMPILE COMPLETE!
+[INFO] Target UUID: dc3c7ded-02
+[INFO] You may now safely eject the SD card.
+[INFO] ========================================================
+[INFO] Engine initialized for target: /dev/sdd
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[INFO] Skipping U-Boot extraction (ensure idbloader/uboot exist if needed for bare metal)...
+[WARN] Erasing and Partitioning /dev/sdd...
+Error: Partition(s) on /dev/sdd are being used.
+[FATAL] Failed mklabel
+[INFO] Engine initialized for target: /dev/sdd
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[INFO] Skipping U-Boot extraction (ensure idbloader/uboot exist if needed for bare metal)...
+[WARN] Erasing and Partitioning /dev/sdd...
+[INFO] Safely unmounting active partitions on /dev/sdd...
+Error: Partition(s) on /dev/sdd are being used.
+[FATAL] Failed mklabel
+[INFO] Engine initialized for target: /dev/sdd
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[INFO] Skipping U-Boot extraction (ensure idbloader/uboot exist if needed for bare metal)...
+[WARN] Erasing and Partitioning /dev/sdd...
+[INFO] Safely unmounting active partitions on /dev/sdd...
+[INFO] Formatting partitions...
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: 09745459-14c1-4fff-b8d2-f269dca0d67e
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Creating journal (32768 blocks): done
+Writing superblocks and filesystem accounting information:   0/231       done
+
+[INFO] ✓ Partitioning complete.
+[INFO] Extracting Alpine mini-rootfs...
+[INFO] ✓ RootFS extracted.
+[INFO] Configuring chroot environment...
+[INFO] Installing Retro-Edge packages inside chroot...
+WARNING: Permanently redirected to http://mirror.postmarketos.org:80/postmarketos/main/aarch64/APKINDEX.tar.gz
+v20260127-10890-gc34e25a150f [http://dl-cdn.alpinelinux.org/alpine/edge/main]
+v20260127-10889-g51968de1966 [http://dl-cdn.alpinelinux.org/alpine/edge/community]
+v20260127-10881-g9977e02e30a [http://dl-cdn.alpinelinux.org/alpine/edge/testing]
+2026-06-05 13:02:33.694038+00:00 [http://mirror.postmarketos.org/postmarketos/master]
+OK: 37208 distinct packages available
+(  1/320) Installing libexpat (2.8.1-r0)
+(  2/320) Installing brotli-libs (1.2.0-r1)
+(  3/320) Installing libbz2 (1.0.8-r6)
+(  4/320) Installing libpng (1.6.58-r1)
+(  5/320) Installing freetype (2.14.3-r0)
+(  6/320) Installing fontconfig (2.17.1-r1)
+(  7/320) Installing encodings (1.1.0-r0)
+(  8/320) Installing libfontenc (1.1.9-r0)
+(  9/320) Installing mkfontscale (1.2.4-r0)
+( 10/320) Installing font-dejavu (2.37-r6)
+( 11/320) Installing font-droid-nonlatin (20200215-r5)
+( 12/320) Installing emulationstation-theme-gbz35 (2.11.2-r1)
+( 13/320) Installing libffi (3.5.2-r1)
+( 14/320) Installing libgcc (15.2.0-r5)
+( 15/320) Installing libstdc++ (15.2.0-r5)
+( 16/320) Installing xz-libs (5.8.3-r0)
+( 17/320) Installing libxml2 (2.13.9-r2)
+( 18/320) Installing zstd-libs (1.5.7-r2)
+( 19/320) Installing llvm22-libs (22.1.3-r0)
+( 20/320) Installing spirv-tools (1.4.341.0-r0)
+( 21/320) Installing libxau (1.0.12-r0)
+( 22/320) Installing libmd (1.2.0-r0)
+( 23/320) Installing libbsd (0.12.2-r0)
+( 24/320) Installing libxdmcp (1.1.5-r1)
+( 25/320) Installing libxcb (1.17.0-r2)
+( 26/320) Installing libx11 (1.8.13-r0)
+( 27/320) Installing hwdata-pci (0.408-r0)
+( 28/320) Installing libpciaccess (0.19-r0)
+( 29/320) Installing libdrm (2.4.134-r0)
+( 30/320) Installing libelf (0.195-r0)
+( 31/320) Installing libxshmfence (1.3.3-r0)
+( 32/320) Installing mesa (26.1.1-r1)
+( 33/320) Installing libxext (1.3.7-r0)
+( 34/320) Installing libxxf86vm (1.1.7-r0)
+( 35/320) Installing mesa-gl (26.1.1-r1)
+( 36/320) Installing sdl3 (3.4.8-r1)
+( 37/320) Installing sdl2-compat (2.32.68-r0)
+( 38/320) Installing alsa-lib (1.2.15.3-r0)
+( 39/320) Installing c-ares (1.34.6-r0)
+( 40/320) Installing libunistring (1.4.2-r0)
+( 41/320) Installing libidn2 (2.3.8-r0)
+( 42/320) Installing nghttp2-libs (1.69.0-r0)
+( 43/320) Installing libpsl (0.21.5-r3)
+( 44/320) Installing libcurl (8.20.0-r1)
+( 45/320) Installing freeimage (3.18.0-r5)
+( 46/320) Installing pugixml (1.15-r0)
+( 47/320) Installing dbus-libs (1.16.2-r2)
+( 48/320) Installing vlc-libs (3.0.23-r4)
+( 49/320) Installing emulationstation (2.11.2-r1)
+( 50/320) Installing mesa-gbm (26.1.1-r1)
+( 51/320) Installing mesa-dri-gallium (26.1.1-r1)
+( 52/320) Installing mesa-gles (26.1.1-r1)
+( 53/320) Installing wayland-libs-client (1.25.0-r0)
+( 54/320) Installing mesa-egl (26.1.1-r1)
+( 55/320) Installing pkgconf (2.5.1-r0)
+( 56/320) Installing hicolor-icon-theme (0.18-r0)
+( 57/320) Installing libxrender (0.9.12-r0)
+( 58/320) Installing pixman (0.46.4-r0)
+( 59/320) Installing cairo (1.18.4-r1)
+( 60/320) Installing libintl (1.0-r0)
+( 61/320) Installing libeconf (0.8.3-r0)
+( 62/320) Installing libblkid (2.42-r0)
+( 63/320) Installing libmount (2.42-r0)
+( 64/320) Installing pcre2 (10.47-r1)
+( 65/320) Installing glib (2.88.1-r0)
+( 66/320) Installing libatk-1.0 (2.60.4-r0)
+( 67/320) Installing gobject-introspection (1.86.0-r1)
+( 68/320) Installing shared-mime-info (2.4-r7)
+( 69/320) Installing libxcomposite (0.4.7-r0)
+( 70/320) Installing libxfixes (6.0.2-r0)
+( 71/320) Installing libxcursor (1.2.3-r0)
+( 72/320) Installing libxdamage (1.1.7-r0)
+( 73/320) Installing libxi (1.8.3-r0)
+( 74/320) Installing libxinerama (1.1.6-r0)
+( 75/320) Installing libxrandr (1.5.5-r0)
+( 76/320) Installing at-spi2-core-libs (2.60.4-r0)
+( 77/320) Installing libxtst (1.2.5-r0)
+( 78/320) Installing at-spi2-core (2.60.4-r0)
+( 79/320) Installing libatk-bridge-2.0 (2.60.4-r0)
+( 80/320) Installing cairo-gobject (1.18.4-r1)
+( 81/320) Installing avahi-libs (0.9_rc4-r0)
+( 82/320) Installing gmp (6.3.0-r4)
+( 83/320) Installing nettle (3.10.2-r0)
+( 84/320) Installing libtasn1 (4.21.0-r0)
+( 85/320) Installing p11-kit (0.25.5-r2)
+( 86/320) Installing gnutls (3.8.13-r0)
+( 87/320) Installing cups-libs (2.4.18-r0)
+( 88/320) Installing libepoxy (1.5.10-r1)
+( 89/320) Installing fribidi (1.0.16-r3)
+( 90/320) Installing libcap2 (2.78-r0)
+( 91/320) Installing bubblewrap (0.11.2-r0)
+( 92/320) Installing lcms2 (2.19-r0)
+( 93/320) Installing libseccomp (2.6.0-r2)
+( 94/320) Installing libglycin (2.1.0-r0)
+  Executing libglycin-2.1.0-r0.post-install
+  * glycin loaders got split into their individual subpackages.
+  * By default, only glycin-image-rs & glycin-svg are installed.
+  * Additional loader subpackages are glycin-heif, glycin-jxl & glycin-raw.
+  * 
+  * To install all available loaders, install glycin-loaders-all.
+  * 
+  * Also the glycin-thumbnailer got subpackaged and isn't installed by default.
+( 95/320) Installing glycin-image-rs (2.1.0-r0)
+( 96/320) Installing libdav1d (1.5.3-r0)
+( 97/320) Installing libxft (2.3.9-r0)
+( 98/320) Installing graphite2 (1.3.14-r6)
+( 99/320) Installing harfbuzz (13.2.1-r0)
+(100/320) Installing pango (1.57.1-r0)
+(101/320) Installing librsvg (2.62.3-r0)
+(102/320) Installing glycin-svg (2.1.0-r0)
+(103/320) Installing gdk-pixbuf (2.44.6-r0)
+(104/320) Installing wayland-libs-cursor (1.25.0-r0)
+(105/320) Installing wayland-libs-egl (1.25.0-r0)
+(106/320) Installing xkeyboard-config (99992.47-r0)
+(107/320) Installing libxkbcommon (1.13.1-r0)
+(108/320) Installing gtk+3.0 (3.24.52-r0)
+(109/320) Installing libxfce4util (4.20.1-r0)
+(110/320) Installing exo-libs (4.20.0-r0)
+(111/320) Installing libice (1.1.2-r0)
+(112/320) Installing libuuid (2.42-r0)
+(113/320) Installing libsm (1.2.6-r0)
+(114/320) Installing libgtop (2.41.3-r1)
+(115/320) Installing xcb-util (0.4.1-r3)
+(116/320) Installing startup-notification (0.12-r8)
+(117/320) Installing xfconf (4.20.0-r2)
+(118/320) Installing libxfce4ui (4.20.1-r1)
+(119/320) Installing exo (4.20.0-r0)
+(120/320) Installing garcon (4.20.0-r0)
+(121/320) Installing libdisplay-info (0.3.0-r0)
+(122/320) Installing libxres (1.2.3-r0)
+(123/320) Installing libwnck3 (43.3-r0)
+(124/320) Installing libxfce4windowing (4.20.6-r0)
+(125/320) Installing desktop-file-utils (0.28-r0)
+(126/320) Installing gtk-update-icon-cache (3.24.52-r0)
+(127/320) Installing libexif (0.6.26-r0)
+(128/320) Installing eudev-libs (3.2.14-r6)
+(129/320) Installing libgudev (238-r1)
+(130/320) Installing libnotify (0.8.8-r0)
+(131/320) Installing gtk-layer-shell (0.10.1-r0)
+(132/320) Installing libxfce4panel (4.20.7-r0)
+(133/320) Installing thunar (4.20.8-r0)
+  Executing thunar-4.20.8-r0.post-install
+(134/320) Installing thunar-volman (4.20.0-r0)
+(135/320) Installing libSvtAv1Enc (4.1.0-r0)
+(136/320) Installing aom-libs (3.14.1-r0)
+(137/320) Installing libva (2.23.0-r0)
+(138/320) Installing libvdpau (1.5-r4)
+(139/320) Installing ffmpeg-libavutil (8.1.1-r0)
+(140/320) Installing libhwy (1.3.0-r0)
+(141/320) Installing libjxl (0.11.2-r1)
+(142/320) Installing lame-libs (3.100-r5)
+(143/320) Installing opus (1.6.1-r0)
+(144/320) Installing rav1e-libs (0.8.1-r0)
+(145/320) Installing libgomp (15.2.0-r5)
+(146/320) Installing soxr (0.1.3-r7)
+(147/320) Installing ffmpeg-libswresample (8.1.1-r0)
+(148/320) Installing libogg (1.3.6-r0)
+(149/320) Installing libtheora (1.2.0-r1)
+(150/320) Installing libvorbis (1.3.7-r2)
+(151/320) Installing libvpx (1.15.2-r0)
+(152/320) Installing libsharpyuv (1.6.0-r0)
+(153/320) Installing libwebp (1.6.0-r0)
+(154/320) Installing libwebpmux (1.6.0-r0)
+(155/320) Installing x264-libs (0.164.3108-r1)
+(156/320) Installing numactl (2.0.19-r0)
+(157/320) Installing x265-libs (4.1-r0)
+(158/320) Installing xvidcore (1.3.7-r2)
+(159/320) Installing ffmpeg-libavcodec (8.1.1-r0)
+(160/320) Installing libunibreak (6.1-r0)
+(161/320) Installing libass (0.17.4-r1)
+(162/320) Installing libudfread (1.2.0-r1)
+(163/320) Installing libbluray (1.4.0-r0)
+(164/320) Installing libdvdcss (1.4.3-r0)
+(165/320) Installing libdvdread (6.1.3-r2)
+(166/320) Installing libdvdnav (6.1.1-r1)
+(167/320) Installing mpg123-libs (1.33.5-r0)
+(168/320) Installing libopenmpt (0.8.7-r0)
+(169/320) Installing cjson (1.7.19-r1)
+(170/320) Installing mbedtls3 (3.6.6-r0)
+(171/320) Installing librist (0.2.15-r0)
+(172/320) Installing libsrt (1.5.3-r1)
+(173/320) Installing libssh (0.12.0-r0)
+(174/320) Installing libsodium (1.0.22-r0)
+(175/320) Installing libzmq (4.3.5-r2)
+(176/320) Installing ffmpeg-libavformat (8.1.1-r0)
+(177/320) Installing serd-libs (0.32.8-r0)
+(178/320) Installing zix-libs (0.8.0-r0)
+(179/320) Installing sord-libs (0.16.22-r0)
+(180/320) Installing sratom (0.6.20-r0)
+(181/320) Installing lilv-libs (0.24.26-r1)
+(182/320) Installing libdovi (3.3.2-r0)
+(183/320) Installing glslang-libs (1.4.341.0-r0)
+(184/320) Installing shaderc (2026.1-r0)
+(185/320) Installing vulkan-loader (1.4.347-r0)
+(186/320) Installing libplacebo (7.360.1-r0)
+(187/320) Installing ffmpeg-libswscale (8.1.1-r0)
+(188/320) Installing vidstab (1.1.1-r0)
+(189/320) Installing zimg (3.0.6-r0)
+(190/320) Installing ffmpeg-libavfilter (8.1.1-r0)
+(191/320) Installing libjpeg-turbo (3.1.3-r0)
+(192/320) Installing ffmpegthumbnailer (2.2.4-r0)
+(193/320) Installing acl-libs (2.3.2-r1)
+(194/320) Installing lz4-libs (1.10.0-r1)
+(195/320) Installing libarchive (3.8.7-r0)
+(196/320) Installing dbus (1.16.2-r2)
+  Executing dbus-1.16.2-r2.pre-install
+  Executing dbus-1.16.2-r2.post-install
+(197/320) Installing dbus-daemon-launch-helper (1.16.2-r2)
+(198/320) Installing xdg-dbus-proxy (0.1.7-r0)
+(199/320) Installing libgpg-error (1.61-r0)
+(200/320) Installing libgcrypt (1.12.2-r0)
+(201/320) Installing gcr-base (3.41.2-r2)
+(202/320) Installing gcr (3.41.2-r2)
+(203/320) Installing libcap-ng (0.8.5-r2)
+(204/320) Installing gnome-keyring (50.0-r0)
+(205/320) Installing skalibs-libs (2.15.0.0-r0)
+(206/320) Installing utmps-libs (0.1.3.3-r0)
+(207/320) Installing linux-pam (1.7.1-r2)
+(208/320) Installing gnome-keyring-pam (50.0-r0)
+(209/320) Installing libyuv (0.0.1928-r0)
+(210/320) Installing libavif (1.4.1-r0)
+(211/320) Installing enchant2-libs (2.8.15-r0)
+(212/320) Installing flite (2.2-r6)
+(213/320) Installing libxv (1.0.13-r0)
+(214/320) Installing cdparanoia-libs (10.2-r14)
+(215/320) Installing graphene (1.10.8-r5)
+(216/320) Installing gstreamer (1.28.3-r0)
+(217/320) Installing gstreamer-ptp-helper (1.28.3-r0)
+(218/320) Installing orc (0.4.41-r0)
+(219/320) Installing gst-plugins-base (1.28.3-r0)
+(220/320) Installing openexr-libiex (3.4.11-r0)
+(221/320) Installing imath (3.2.2-r1)
+(222/320) Installing openexr-libilmthread (3.4.11-r0)
+(223/320) Installing libdeflate (1.25-r0)
+(224/320) Installing openexr-libopenexrcore (3.4.11-r0)
+(225/320) Installing openexr-libopenexr (3.4.11-r0)
+(226/320) Installing soundtouch (2.4.1-r0)
+(227/320) Installing libraw1394 (2.1.2-r5)
+(228/320) Installing libusb (1.0.30-r0)
+(229/320) Installing libdc1394 (2.2.7-r0)
+(230/320) Installing libde265 (1.0.18-r0)
+(231/320) Installing tslib (1.24-r0)
+(232/320) Installing directfb (1.7.7-r8)
+(233/320) Installing faac (1.31.1-r0)
+(234/320) Installing faad2-libs (2.11.2-r0)
+(235/320) Installing fdk-aac (2.0.2-r4)
+(236/320) Installing libfreeaptx (0.2.2-r0)
+(237/320) Installing gsm (1.0.23-r0)
+(238/320) Installing libldac (2.0.2.3-r1)
+(239/320) Installing libmodplug (0.8.9.0-r3)
+(240/320) Installing ca-certificates (20260413-r0)
+(241/320) Installing neon (0.36.0-r0)
+(242/320) Installing openal-soft-libs (1.25.2-r0)
+(243/320) Installing openh264 (2.6.0-r0)
+(244/320) Installing openjpeg (2.5.4-r1)
+(245/320) Installing librtmp (2.4_git20190330-r5)
+(246/320) Installing sbc (2.1-r0)
+(247/320) Installing libflac (1.4.3-r2)
+(248/320) Installing libsndfile (1.2.2-r2)
+(249/320) Installing tiff (4.7.1-r0)
+(250/320) Installing spandsp (0.0.6-r5)
+(251/320) Installing libsrtp (2.7.0-r0)
+(252/320) Installing vo-aacenc (0.1.3-r3)
+(253/320) Installing vo-amrwbenc (0.1.3-r3)
+(254/320) Installing libxkbcommon-x11 (1.13.1-r0)
+(255/320) Installing libzbar (0.23.93-r2)
+(256/320) Installing gst-plugins-bad (1.28.3-r0)
+(257/320) Installing icu-data-en (78.1-r0)
+  Executing icu-data-en-78.1-r0.post-install
+  * If you need ICU with non-English locales and legacy charset support, install
+  * package icu-data-full.
+(258/320) Installing icu-libs (78.1-r0)
+(259/320) Installing harfbuzz-icu (13.2.1-r0)
+(260/320) Installing hyphen (2.8.8-r3)
+(261/320) Installing libevdev (1.13.6-r0)
+(262/320) Installing hidapi (0.15.0-r0)
+(263/320) Installing libmanette (0.2.12-r0)
+(264/320) Installing libsecret (0.21.7-r0)
+(265/320) Installing gsettings-desktop-schemas (50.1-r0)
+(266/320) Installing duktape-libs (2.7.0-r3)
+(267/320) Installing libproxy (0.5.12-r0)
+(268/320) Installing glib-networking (2.80.1-r2)
+(269/320) Installing sqlite-libs (3.53.2-r0)
+(270/320) Installing libsoup3 (3.6.6-r0)
+(271/320) Installing wayland-libs-server (1.25.0-r0)
+(272/320) Installing libwebpdemux (1.6.0-r0)
+(273/320) Installing libwoff2common (1.0.2-r4)
+(274/320) Installing libwoff2enc (1.0.2-r4)
+(275/320) Installing libxslt (1.1.43-r3)
+(276/320) Installing webkit2gtk-4.1 (2.48.7-r0)
+(277/320) Installing libgepub (0.7.1-r1)
+(278/320) Installing libgsf (1.14.58-r0)
+(279/320) Installing libopenraw (0.3.7-r3)
+(280/320) Installing nspr (4.38.2-r0)
+(281/320) Installing nss (3.124-r0)
+(282/320) Installing poppler (25.12.0-r1)
+(283/320) Installing poppler-glib (25.12.0-r1)
+(284/320) Installing tumbler (4.20.0-r0)
+(285/320) Installing xfce4-appfinder (4.20.0-r0)
+(286/320) Installing json-glib (1.10.8-r0)
+(287/320) Installing libdbusmenu-glib (16.04.0-r6)
+(288/320) Installing libdbusmenu-gtk3 (16.04.0-r6)
+(289/320) Installing xfce4-panel (4.20.7-r0)
+(290/320) Installing polkit-noelogind-libs (127-r2)
+(291/320) Installing polkit-common (127-r2)
+  Executing polkit-common-127-r2.pre-install
+(292/320) Installing polkit (127-r2)
+(293/320) Installing upower (1.91.0-r2)
+(294/320) Installing xfce4-power-manager (4.20.0-r1)
+(295/320) Installing iceauth (1.0.11-r0)
+(296/320) Installing dbus-x11 (1.16.2-r2)
+(297/320) Installing ncurses-terminfo-base (6.6_p20260516-r0)
+(298/320) Installing libncursesw (6.6_p20260516-r0)
+(299/320) Installing libproc2 (4.0.6-r0)
+(300/320) Installing procps-ng (4.0.6-r0)
+(301/320) Installing xfce4-session (4.20.2-r0)
+(302/320) Installing libcolord (1.4.8-r4)
+(303/320) Installing iso-codes (4.20.1-r0)
+(304/320) Installing libxkbfile (1.2.0-r0)
+(305/320) Installing libxklavier (5.4-r8)
+(306/320) Installing xfce4-settings (4.20.4-r0)
+(307/320) Installing yaml (0.2.5-r2)
+(308/320) Installing xfdesktop (4.20.1-r0)
+(309/320) Installing libxpresent (1.0.2-r0)
+(310/320) Installing xfwm4 (4.20.0-r1)
+(311/320) Installing xfce4 (4.20-r0)
+(312/320) Installing font-alias (1.0.6-r0)
+(313/320) Installing util-macros (1.20.2-r0)
+(314/320) Installing font-cursor-misc (1.0.4-r1)
+(315/320) Installing font-misc-misc (1.1.3-r1)
+(316/320) Installing xkbcomp (1.5.0-r0)
+(317/320) Installing xorg-server-common (21.1.23-r0)
+(318/320) Installing libxfont2 (2.0.7-r0)
+(319/320) Installing libxcvt (0.1.3-r0)
+(320/320) Installing xorg-server (21.1.23-r0)
+Executing busybox-1.37.0-r30.trigger
+Executing fontconfig-2.17.1-r1.trigger
+Executing mkfontscale-1.2.4-r0.trigger
+Executing glib-2.88.1-r0.trigger
+Executing shared-mime-info-2.4-r7.trigger
+Executing gtk+3.0-3.24.52-r0.trigger
+Executing desktop-file-utils-0.28-r0.trigger
+Executing gtk-update-icon-cache-3.24.52-r0.trigger
+Executing dbus-1.16.2-r2.trigger
+Executing ca-certificates-20260413-r0.trigger
+OK: 657.5 MiB in 336 packages
+[INFO] ✓ Packages installed successfully.
+[INFO] Generating dynamic boot.ini...
+[INFO] Copying Kernel assets...
+[INFO] ✓ Boot files deployed.
+[INFO] ========================================================
+[INFO] ✓ PINE-RE COMPILE COMPLETE!
+[INFO] Target UUID: cad64eec-02
+[INFO] You may now safely eject the SD card.
+[INFO] ========================================================
+[INFO] Engine initialized for target: /dev/sde
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[WARN] Safely unmounting active partitions on /dev/sde...
+[INFO] ✓ Drive unmounted.
+[WARN] Flashing RK3326 U-Boot to hidden sectors on /dev/sde...
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.9192 s, 4.4 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.28397 s, 3.3 MB/s
+[INFO] ✓ U-Boot successfully written to hardware.
+[WARN] Erasing and Partitioning /dev/sde...
+[INFO] Formatting partitions...
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: 94433e1b-6ebe-4106-b97e-9b9b488da941
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231 50/231       done
+
+[INFO] ✓ Partitioning complete.
+[INFO] Extracting Alpine mini-rootfs...
+[INFO] ✓ RootFS extracted.
+[INFO] Configuring chroot environment...
+[INFO] Installing Base System, Audio, Video, and Emulation packages...
+WARNING: Permanently redirected to http://mirror.postmarketos.org:80/postmarketos/main/aarch64/APKINDEX.tar.gz
+v20260127-10890-gc34e25a150f [http://dl-cdn.alpinelinux.org/alpine/edge/main]
+v20260127-10889-g51968de1966 [http://dl-cdn.alpinelinux.org/alpine/edge/community]
+v20260127-10881-g9977e02e30a [http://dl-cdn.alpinelinux.org/alpine/edge/testing]
+2026-06-05 13:02:33.694038+00:00 [http://mirror.postmarketos.org/postmarketos/master]
+OK: 37208 distinct packages available
+ERROR: unable to select packages:
+  xf86-video-fbturbo (no such package):
+    required by: world[xf86-video-fbturbo]
+[INFO] Creating default 'pine' user...
+addgroup: group 'input' in use
+addgroup: group 'video' in use
+addgroup: group 'audio' in use
+adduser: unknown group wheel,audio,video,input
+chpasswd: unknown user pine
+chpasswd: password for 'root' changed
+./setup_r36ultra.sh: line 168: /mnt/pine_root/etc/sudoers.d/wheel: No such file or directory
+[INFO] Injecting udev rules for R36 Ultra controls...
+[INFO] Configuring Auto-Login and EmulationStation Auto-start...
+./setup_r36ultra.sh: line 190: /mnt/pine_root/home/pine/.profile: No such file or directory
+chown: unknown user/group pine:pine
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+[INFO] ✓ Extensive system configuration complete.
+[INFO] Generating dynamic boot.ini...
+[INFO] Copying Kernel assets...
+[INFO] ✓ Boot files deployed.
+[INFO] ========================================================
+[INFO] ✓ PINE-RE COMPILE COMPLETE!
+[INFO] Target UUID: dee0d83d-02
+[INFO] You may now safely eject the SD card.
+[INFO] ========================================================
+[INFO] Engine initialized for target: /dev/sdf
+[INFO] Synthesizing boot environment...
+[INFO] ✓ Local Image and uInitrd found.
+[WARN] Safely unmounting active partitions on /dev/sdf...
+[INFO] ✓ Drive unmounted.
+[WARN] Flashing RK3326 U-Boot to hidden sectors on /dev/sdf...
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.88014 s, 4.4 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.20762 s, 3.5 MB/s
+[INFO] ✓ U-Boot successfully written to hardware.
+[WARN] Erasing and Partitioning /dev/sdf...
+[INFO] Formatting partitions...
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: 80a4fe22-75b2-4702-993f-1910f40e13e9
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+[INFO] ✓ Partitioning complete.
+[INFO] Extracting Alpine mini-rootfs...
+[INFO] ✓ RootFS extracted.
+[INFO] Configuring chroot environment...
+[INFO] Installing Base System, Audio, Video, Emulation, and Custom Script dependencies...
+WARNING: Permanently redirected to http://mirror.postmarketos.org:80/postmarketos/main/aarch64/APKINDEX.tar.gz
+v20260127-10890-gc34e25a150f [http://dl-cdn.alpinelinux.org/alpine/edge/main]
+v20260127-10892-g3241f28bdb5 [http://dl-cdn.alpinelinux.org/alpine/edge/community]
+v20260127-10881-g9977e02e30a [http://dl-cdn.alpinelinux.org/alpine/edge/testing]
+2026-06-05 13:02:33.694038+00:00 [http://mirror.postmarketos.org/postmarketos/master]
+OK: 37208 distinct packages available
+ERROR: unable to select packages:
+  triggerhappy (no such package):
+    required by: world[triggerhappy]
+  xf86-video-fbturbo (no such package):
+    required by: world[xf86-video-fbturbo]
+[INFO] Creating default 'pine' user...
+addgroup: group 'input' in use
+addgroup: group 'video' in use
+addgroup: group 'audio' in use
+adduser: unknown group wheel,audio,video,input
+chpasswd: unknown user pine
+chpasswd: password for 'root' changed
+./setup_r36ultra.sh: line 163: /mnt/pine_root/etc/sudoers.d/wheel: No such file or directory
+[INFO] Injecting custom R36 Ultra utilities and daemons...
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+[INFO] Configuring Auto-Login and EmulationStation Auto-start...
+./setup_r36ultra.sh: line 215: /mnt/pine_root/home/pine/.profile: No such file or directory
+chown: unknown user/group pine:pine
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+chroot: failed to run command ‘rc-update’: No such file or directory
+[INFO] ✓ Extensive system configuration complete.
+[INFO] Generating dynamic boot.ini...
+[INFO] Copying Kernel assets...
+[INFO] ✓ Boot files deployed.
+[INFO] ========================================================
+[INFO] ✓ PINE-RE COMPILE COMPLETE!
+[INFO] Target UUID: a8209548-02
+[INFO] You may now safely eject the SD card.
+[INFO] ========================================================
+[INFO] Synthesizing boot environment...
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 0.13587 s, 61.5 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.0703773 s, 59.6 MB/s
+Error: The location 32MiB is outside of the device /dev/sdf.
+Error: The location 512MiB is outside of the device /dev/sdf.
+mkfs.vfat: unable to open /dev/sdfp1: No such file or directory
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+The file /dev/sdfp2 does not exist and no size was specified.
+mount: /mnt/pine_boot: special device /dev/sdfp1 does not exist.
+       dmesg(1) may have more information after failed mount system call.
+mount: /mnt/pine_root: special device /dev/sdfp2 does not exist.
+       dmesg(1) may have more information after failed mount system call.
+tar: ./tmp: Cannot mkdir: Input/output error
+tar: ./sys: Cannot mkdir: Input/output error
+tar: ./srv: Cannot mkdir: Input/output error
+tar: ./run: Cannot mkdir: Input/output error
+tar: ./run/lock: Cannot mkdir: Input/output error
+tar: ./root: Cannot mkdir: Input/output error
+tar: ./proc: Cannot mkdir: Input/output error
+tar: ./opt: Cannot mkdir: Input/output error
+tar: ./mnt: Cannot mkdir: Input/output error
+tar: ./media: Cannot mkdir: Input/output error
+tar: ./media/usb: Cannot mkdir: Input/output error
+tar: ./media/floppy: Cannot mkdir: Input/output error
+tar: ./media/cdrom: Cannot mkdir: Input/output error
+tar: ./home: Cannot mkdir: Input/output error
+tar: ./dev: Cannot mkdir: Input/output error
+tar: ./usr: Cannot mkdir: Input/output error
+tar: ./usr/local: Cannot mkdir: Input/output error
+tar: ./usr/local/share: Cannot mkdir: Input/output error
+tar: ./usr/local/lib: Cannot mkdir: Input/output error
+tar: ./usr/local/bin: Cannot mkdir: Input/output error
+tar: ./usr/lib: Cannot mkdir: Input/output error
+tar: ./usr/lib/libapk.so.3.0.0: Cannot open: Input/output error
+tar: ./usr/lib/libz.so.1.3.2: Cannot open: Input/output error
+tar: ./usr/lib/libz.so.1: Cannot create symlink to ‘libz.so.1.3.2’: Input/output error
+tar: ./usr/lib/libssl.so.3: Cannot open: Input/output error
+tar: ./usr/lib/libcrypto.so.3: Cannot open: Input/output error
+tar: ./usr/lib/ossl-modules: Cannot mkdir: Input/output error
+tar: ./usr/lib/ossl-modules/legacy.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3: Cannot mkdir: Input/output error
+tar: ./usr/lib/engines-3/padlock.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3/loader_attic.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3/capi.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3/afalg.so: Cannot open: Input/output error
+tar: ./usr/lib/os-release: Cannot open: Input/output error
+tar: ./usr/lib/sysctl.d: Cannot mkdir: Input/output error
+tar: ./usr/lib/sysctl.d/00-alpine.conf: Cannot open: Input/output error
+tar: ./usr/lib/modules-load.d: Cannot mkdir: Input/output error
+tar: ./usr/bin: Cannot mkdir: Input/output error
+tar: ./usr/bin/yes: Cannot open: Input/output error
+tar: ./usr/bin/xzcat: Cannot open: Input/output error
+tar: ./usr/bin/xxd: Cannot open: Input/output error
+tar: ./usr/bin/xargs: Cannot open: Input/output error
+tar: ./usr/bin/whois: Cannot open: Input/output error
+tar: ./usr/bin/whoami: Cannot open: Input/output error
+tar: ./usr/bin/who: Cannot open: Input/output error
+tar: ./usr/bin/which: Cannot open: Input/output error
+tar: ./usr/bin/wget: Cannot open: Input/output error
+tar: ./usr/bin/wc: Cannot open: Input/output error
+tar: ./usr/bin/volname: Cannot open: Input/output error
+tar: ./usr/bin/vlock: Cannot open: Input/output error
+tar: ./usr/bin/vi: Cannot open: Input/output error
+tar: ./usr/bin/uuencode: Cannot open: Input/output error
+tar: ./usr/bin/uudecode: Cannot open: Input/output error
+tar: ./usr/bin/uptime: Cannot open: Input/output error
+tar: ./usr/bin/unzip: Cannot open: Input/output error
+tar: ./usr/bin/unxz: Cannot open: Input/output error
+tar: ./usr/bin/unshare: Cannot open: Input/output error
+tar: ./usr/bin/unlzop: Cannot open: Input/output error
+tar: ./usr/bin/unlzma: Cannot open: Input/output error
+tar: ./usr/bin/unlink: Cannot open: Input/output error
+tar: ./usr/bin/unix2dos: Cannot open: Input/output error
+tar: ./usr/bin/uniq: Cannot open: Input/output error
+tar: ./usr/bin/unexpand: Cannot open: Input/output error
+tar: ./usr/bin/udhcpc6: Cannot open: Input/output error
+tar: ./usr/bin/ttysize: Cannot open: Input/output error
+tar: ./usr/bin/tty: Cannot open: Input/output error
+tar: ./usr/bin/truncate: Cannot open: Input/output error
+tar: ./usr/bin/tree: Cannot open: Input/output error
+tar: ./usr/bin/traceroute6: Cannot open: Input/output error
+tar: ./usr/bin/traceroute: Cannot open: Input/output error
+tar: ./usr/bin/tr: Cannot open: Input/output error
+tar: ./usr/bin/top: Cannot open: Input/output error
+tar: ./usr/bin/timeout: Cannot open: Input/output error
+tar: ./usr/bin/time: Cannot open: Input/output error
+tar: ./usr/bin/test: Cannot open: Input/output error
+tar: ./usr/bin/tee: Cannot open: Input/output error
+tar: ./usr/bin/tail: Cannot open: Input/output error
+tar: ./usr/bin/tac: Cannot open: Input/output error
+tar: ./usr/bin/sum: Cannot open: Input/output error
+tar: ./usr/bin/strings: Cannot open: Input/output error
+tar: ./usr/bin/split: Cannot open: Input/output error
+tar: ./usr/bin/sort: Cannot open: Input/output error
+tar: ./usr/bin/shuf: Cannot open: Input/output error
+tar: ./usr/bin/shred: Cannot open: Input/output error
+tar: ./usr/bin/showkey: Cannot open: Input/output error
+tar: ./usr/bin/sha512sum: Cannot open: Input/output error
+tar: ./usr/bin/sha3sum: Cannot open: Input/output error
+tar: ./usr/bin/sha256sum: Cannot open: Input/output error
+tar: ./usr/bin/sha1sum: Cannot open: Input/output error
+tar: ./usr/bin/setsid: Cannot open: Input/output error
+tar: ./usr/bin/setkeycodes: Cannot open: Input/output error
+tar: ./usr/bin/seq: Cannot open: Input/output error
+tar: ./usr/bin/resize: Cannot open: Input/output error
+tar: ./usr/bin/reset: Cannot open: Input/output error
+tar: ./usr/bin/renice: Cannot open: Input/output error
+tar: ./usr/bin/realpath: Cannot open: Input/output error
+tar: ./usr/bin/readlink: Cannot open: Input/output error
+tar: ./usr/bin/pwdx: Cannot open: Input/output error
+tar: ./usr/bin/pstree: Cannot open: Input/output error
+tar: ./usr/bin/pscan: Cannot open: Input/output error
+tar: ./usr/bin/printf: Cannot open: Input/output error
+tar: ./usr/bin/pmap: Cannot open: Input/output error
+tar: ./usr/bin/pkill: Cannot open: Input/output error
+tar: ./usr/bin/pgrep: Cannot open: Input/output error
+tar: ./usr/bin/paste: Cannot open: Input/output error
+tar: ./usr/bin/passwd: Cannot open: Input/output error
+tar: ./usr/bin/openvt: Cannot open: Input/output error
+tar: ./usr/bin/od: Cannot open: Input/output error
+tar: ./usr/bin/nslookup: Cannot open: Input/output error
+tar: ./usr/bin/nsenter: Cannot open: Input/output error
+tar: ./usr/bin/nproc: Cannot open: Input/output error
+tar: ./usr/bin/nohup: Cannot open: Input/output error
+tar: ./usr/bin/nmeter: Cannot open: Input/output error
+tar: ./usr/bin/nl: Cannot open: Input/output error
+tar: ./usr/bin/nc: Cannot open: Input/output error
+tar: ./usr/bin/mkpasswd: Cannot open: Input/output error
+tar: ./usr/bin/mkfifo: Cannot open: Input/output error
+tar: ./usr/bin/microcom: Cannot open: Input/output error
+tar: ./usr/bin/mesg: Cannot open: Input/output error
+tar: ./usr/bin/md5sum: Cannot open: Input/output error
+tar: ./usr/bin/lzopcat: Cannot open: Input/output error
+tar: ./usr/bin/lzma: Cannot open: Input/output error
+tar: ./usr/bin/lzcat: Cannot open: Input/output error
+tar: ./usr/bin/lsusb: Cannot open: Input/output error
+tar: ./usr/bin/lsof: Cannot open: Input/output error
+tar: ./usr/bin/logger: Cannot open: Input/output error
+tar: ./usr/bin/less: Cannot open: Input/output error
+tar: ./usr/bin/last: Cannot open: Input/output error
+tar: ./usr/bin/killall: Cannot open: Input/output error
+tar: ./usr/bin/ipcs: Cannot open: Input/output error
+tar: ./usr/bin/ipcrm: Cannot open: Input/output error
+tar: ./usr/bin/install: Cannot open: Input/output error
+tar: ./usr/bin/id: Cannot open: Input/output error
+tar: ./usr/bin/hostid: Cannot open: Input/output error
+tar: ./usr/bin/hexdump: Cannot open: Input/output error
+tar: ./usr/bin/head: Cannot open: Input/output error
+tar: ./usr/bin/hd: Cannot open: Input/output error
+tar: ./usr/bin/groups: Cannot open: Input/output error
+tar: ./usr/bin/fuser: Cannot open: Input/output error
+tar: ./usr/bin/free: Cannot open: Input/output error
+tar: ./usr/bin/fold: Cannot open: Input/output error
+tar: ./usr/bin/flock: Cannot open: Input/output error
+tar: ./usr/bin/find: Cannot open: Input/output error
+tar: ./usr/bin/fallocate: Cannot open: Input/output error
+tar: ./usr/bin/factor: Cannot open: Input/output error
+tar: ./usr/bin/expr: Cannot open: Input/output error
+tar: ./usr/bin/expand: Cannot open: Input/output error
+tar: ./usr/bin/env: Cannot open: Input/output error
+tar: ./usr/bin/eject: Cannot open: Input/output error
+tar: ./usr/bin/du: Cannot open: Input/output error
+tar: ./usr/bin/dos2unix: Cannot open: Input/output error
+tar: ./usr/bin/dirname: Cannot open: Input/output error
+tar: ./usr/bin/diff: Cannot open: Input/output error
+tar: ./usr/bin/deallocvt: Cannot open: Input/output error
+tar: ./usr/bin/dc: Cannot open: Input/output error
+tar: ./usr/bin/cut: Cannot open: Input/output error
+tar: ./usr/bin/cryptpw: Cannot open: Input/output error
+tar: ./usr/bin/crontab: Cannot open: Input/output error
+tar: ./usr/bin/cpio: Cannot open: Input/output error
+tar: ./usr/bin/comm: Cannot open: Input/output error
+tar: ./usr/bin/cmp: Cannot open: Input/output error
+tar: ./usr/bin/clear: Cannot open: Input/output error
+tar: ./usr/bin/cksum: Cannot open: Input/output error
+tar: ./usr/bin/chvt: Cannot open: Input/output error
+tar: ./usr/bin/cal: Cannot open: Input/output error
+tar: ./usr/bin/bzip2: Cannot open: Input/output error
+tar: ./usr/bin/bzcat: Cannot open: Input/output error
+tar: ./usr/bin/bunzip2: Cannot open: Input/output error
+tar: ./usr/bin/beep: Cannot open: Input/output error
+tar: ./usr/bin/bc: Cannot open: Input/output error
+tar: ./usr/bin/basename: Cannot open: Input/output error
+tar: ./usr/bin/awk: Cannot open: Input/output error
+tar: ./usr/bin/[[: Cannot open: Input/output error
+tar: ./usr/bin/[: Cannot open: Input/output error
+tar: ./usr/bin/ldd: Cannot open: Input/output error
+tar: ./usr/bin/iconv: Cannot open: Input/output error
+tar: ./usr/bin/getent: Cannot open: Input/output error
+tar: ./usr/bin/getconf: Cannot open: Input/output error
+tar: ./usr/bin/scanelf: Cannot open: Input/output error
+tar: ./usr/bin/ssl_client: Cannot open: Input/output error
+tar: ./usr/share: Cannot mkdir: Input/output error
+tar: ./usr/share/apk: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86_64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/s390x: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/riscv64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/ppc64le: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/mips64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/loongarch64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/loongarch64/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armv7: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armhf: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/aarch64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/misc: Cannot mkdir: Input/output error
+tar: ./usr/share/udhcpc: Cannot mkdir: Input/output error
+tar: ./usr/share/udhcpc/default.script: Cannot open: Input/output error
+tar: ./usr/sbin: Cannot mkdir: Input/output error
+tar: ./usr/sbin/setlogcons: Cannot open: Input/output error
+tar: ./usr/sbin/setfont: Cannot open: Input/output error
+tar: ./usr/sbin/sendmail: Cannot open: Input/output error
+tar: ./usr/sbin/rfkill: Cannot open: Input/output error
+tar: ./usr/sbin/remove-shell: Cannot open: Input/output error
+tar: ./usr/sbin/readahead: Cannot open: Input/output error
+tar: ./usr/sbin/rdev: Cannot open: Input/output error
+tar: ./usr/sbin/rdate: Cannot open: Input/output error
+tar: ./usr/sbin/partprobe: Cannot open: Input/output error
+tar: ./usr/sbin/ntpd: Cannot open: Input/output error
+tar: ./usr/sbin/nbd-client: Cannot open: Input/output error
+tar: ./usr/sbin/nandwrite: Cannot open: Input/output error
+tar: ./usr/sbin/nanddump: Cannot open: Input/output error
+tar: ./usr/sbin/loadfont: Cannot open: Input/output error
+tar: ./usr/sbin/killall5: Cannot open: Input/output error
+tar: ./usr/sbin/fbset: Cannot open: Input/output error
+tar: ./usr/sbin/ether-wake: Cannot open: Input/output error
+tar: ./usr/sbin/deluser: Cannot open: Input/output error
+tar: ./usr/sbin/delgroup: Cannot open: Input/output error
+tar: ./usr/sbin/crond: Cannot open: Input/output error
+tar: ./usr/sbin/chroot: Cannot open: Input/output error
+tar: ./usr/sbin/chpasswd: Cannot open: Input/output error
+tar: ./usr/sbin/brctl: Cannot open: Input/output error
+tar: ./usr/sbin/arping: Cannot open: Input/output error
+tar: ./usr/sbin/adduser: Cannot open: Input/output error
+tar: ./usr/sbin/addgroup: Cannot open: Input/output error
+tar: ./usr/sbin/add-shell: Cannot open: Input/output error
+tar: ./sbin: Cannot mkdir: Input/output error
+tar: ./sbin/zcip: Cannot open: Input/output error
+tar: ./sbin/watchdog: Cannot open: Input/output error
+tar: ./sbin/vconfig: Cannot open: Input/output error
+tar: ./sbin/udhcpc: Cannot open: Input/output error
+tar: ./sbin/tunctl: Cannot open: Input/output error
+tar: ./sbin/syslogd: Cannot open: Input/output error
+tar: ./sbin/sysctl: Cannot open: Input/output error
+tar: ./sbin/switch_root: Cannot open: Input/output error
+tar: ./sbin/swapon: Cannot open: Input/output error
+tar: ./sbin/swapoff: Cannot open: Input/output error
+tar: ./sbin/slattach: Cannot open: Input/output error
+tar: ./sbin/setconsole: Cannot open: Input/output error
+tar: ./sbin/route: Cannot open: Input/output error
+tar: ./sbin/rmmod: Cannot open: Input/output error
+tar: ./sbin/reboot: Cannot open: Input/output error
+tar: ./sbin/raidautorun: Cannot open: Input/output error
+tar: ./sbin/poweroff: Cannot open: Input/output error
+tar: ./sbin/pivot_root: Cannot open: Input/output error
+tar: ./sbin/nologin: Cannot open: Input/output error
+tar: ./sbin/nameif: Cannot open: Input/output error
+tar: ./sbin/modprobe: Cannot open: Input/output error
+tar: ./sbin/modinfo: Cannot open: Input/output error
+tar: ./sbin/mkswap: Cannot open: Input/output error
+tar: ./sbin/mkfs.vfat: Cannot open: Input/output error
+tar: ./sbin/mkdosfs: Cannot open: Input/output error
+tar: ./sbin/mdev: Cannot open: Input/output error
+tar: ./sbin/lsmod: Cannot open: Input/output error
+tar: ./sbin/losetup: Cannot open: Input/output error
+tar: ./sbin/logread: Cannot open: Input/output error
+tar: ./sbin/loadkmap: Cannot open: Input/output error
+tar: ./sbin/klogd: Cannot open: Input/output error
+tar: ./sbin/iptunnel: Cannot open: Input/output error
+tar: ./sbin/iprule: Cannot open: Input/output error
+tar: ./sbin/iproute: Cannot open: Input/output error
+tar: ./sbin/ipneigh: Cannot open: Input/output error
+tar: ./sbin/iplink: Cannot open: Input/output error
+tar: ./sbin/ipaddr: Cannot open: Input/output error
+tar: ./sbin/ip: Cannot open: Input/output error
+tar: ./sbin/insmod: Cannot open: Input/output error
+tar: ./sbin/inotifyd: Cannot open: Input/output error
+tar: ./sbin/init: Cannot open: Input/output error
+tar: ./sbin/ifup: Cannot open: Input/output error
+tar: ./sbin/ifenslave: Cannot open: Input/output error
+tar: ./sbin/ifdown: Cannot open: Input/output error
+tar: ./sbin/ifconfig: Cannot open: Input/output error
+tar: ./sbin/hwclock: Cannot open: Input/output error
+tar: ./sbin/halt: Cannot open: Input/output error
+tar: ./sbin/getty: Cannot open: Input/output error
+tar: ./sbin/fstrim: Cannot open: Input/output error
+tar: ./sbin/fsck: Cannot open: Input/output error
+tar: ./sbin/findfs: Cannot open: Input/output error
+tar: ./sbin/fdisk: Cannot open: Input/output error
+tar: ./sbin/fbsplash: Cannot open: Input/output error
+tar: ./sbin/depmod: Cannot open: Input/output error
+tar: ./sbin/blockdev: Cannot open: Input/output error
+tar: ./sbin/blkid: Cannot open: Input/output error
+tar: ./sbin/blkdiscard: Cannot open: Input/output error
+tar: ./sbin/arp: Cannot open: Input/output error
+tar: ./sbin/adjtimex: Cannot open: Input/output error
+tar: ./sbin/acpid: Cannot open: Input/output error
+tar: ./sbin/ldconfig: Cannot open: Input/output error
+tar: ./sbin/apk: Cannot open: Input/output error
+tar: ./bin: Cannot mkdir: Input/output error
+tar: ./bin/zcat: Cannot open: Input/output error
+tar: ./bin/watch: Cannot open: Input/output error
+tar: ./bin/usleep: Cannot open: Input/output error
+tar: ./bin/uname: Cannot open: Input/output error
+tar: ./bin/umount: Cannot open: Input/output error
+tar: ./bin/true: Cannot open: Input/output error
+tar: ./bin/touch: Cannot open: Input/output error
+tar: ./bin/tar: Cannot open: Input/output error
+tar: ./bin/sync: Cannot open: Input/output error
+tar: ./bin/su: Cannot open: Input/output error
+tar: ./bin/stty: Cannot open: Input/output error
+tar: ./bin/stat: Cannot open: Input/output error
+tar: ./bin/sleep: Cannot open: Input/output error
+tar: ./bin/setserial: Cannot open: Input/output error
+tar: ./bin/setpriv: Cannot open: Input/output error
+tar: ./bin/sed: Cannot open: Input/output error
+tar: ./bin/run-parts: Cannot open: Input/output error
+tar: ./bin/rmdir: Cannot open: Input/output error
+tar: ./bin/rm: Cannot open: Input/output error
+tar: ./bin/rev: Cannot open: Input/output error
+tar: ./bin/reformime: Cannot open: Input/output error
+tar: ./bin/pwd: Cannot open: Input/output error
+tar: ./bin/ps: Cannot open: Input/output error
+tar: ./bin/printenv: Cannot open: Input/output error
+tar: ./bin/pipe_progress: Cannot open: Input/output error
+tar: ./bin/ping6: Cannot open: Input/output error
+tar: ./bin/ping: Cannot open: Input/output error
+tar: ./bin/pidof: Cannot open: Input/output error
+tar: ./bin/nice: Cannot open: Input/output error
+tar: ./bin/netstat: Cannot open: Input/output error
+tar: ./bin/mv: Cannot open: Input/output error
+tar: ./bin/mpstat: Cannot open: Input/output error
+tar: ./bin/mountpoint: Cannot open: Input/output error
+tar: ./bin/mount: Cannot open: Input/output error
+tar: ./bin/more: Cannot open: Input/output error
+tar: ./bin/mktemp: Cannot open: Input/output error
+tar: ./bin/mknod: Cannot open: Input/output error
+tar: ./bin/mkdir: Cannot open: Input/output error
+tar: ./bin/makemime: Cannot open: Input/output error
+tar: ./bin/lzop: Cannot open: Input/output error
+tar: ./bin/lsattr: Cannot open: Input/output error
+tar: ./bin/ls: Cannot open: Input/output error
+tar: ./bin/login: Cannot open: Input/output error
+tar: ./bin/ln: Cannot open: Input/output error
+tar: ./bin/linux64: Cannot open: Input/output error
+tar: ./bin/linux32: Cannot open: Input/output error
+tar: ./bin/link: Cannot open: Input/output error
+tar: ./bin/kill: Cannot open: Input/output error
+tar: ./bin/kbd_mode: Cannot open: Input/output error
+tar: ./bin/ipcalc: Cannot open: Input/output error
+tar: ./bin/iostat: Cannot open: Input/output error
+tar: ./bin/ionice: Cannot open: Input/output error
+tar: ./bin/hostname: Cannot open: Input/output error
+tar: ./bin/gzip: Cannot open: Input/output error
+tar: ./bin/gunzip: Cannot open: Input/output error
+tar: ./bin/grep: Cannot open: Input/output error
+tar: ./bin/getopt: Cannot open: Input/output error
+tar: ./bin/fsync: Cannot open: Input/output error
+tar: ./bin/fgrep: Cannot open: Input/output error
+tar: ./bin/fdflush: Cannot open: Input/output error
+tar: ./bin/fatattr: Cannot open: Input/output error
+tar: ./bin/false: Cannot open: Input/output error
+tar: ./bin/egrep: Cannot open: Input/output error
+tar: ./bin/echo: Cannot open: Input/output error
+tar: ./bin/dumpkmap: Cannot open: Input/output error
+tar: ./bin/dnsdomainname: Cannot open: Input/output error
+tar: ./bin/dmesg: Cannot open: Input/output error
+tar: ./bin/df: Cannot open: Input/output error
+tar: ./bin/dd: Cannot open: Input/output error
+tar: ./bin/date: Cannot open: Input/output error
+tar: ./bin/cp: Cannot open: Input/output error
+tar: ./bin/chown: Cannot open: Input/output error
+tar: ./bin/chmod: Cannot open: Input/output error
+tar: ./bin/chgrp: Cannot open: Input/output error
+tar: ./bin/chattr: Cannot open: Input/output error
+tar: ./bin/cat: Cannot open: Input/output error
+tar: ./bin/bbconfig: Cannot open: Input/output error
+tar: ./bin/base64: Cannot open: Input/output error
+tar: ./bin/ash: Cannot open: Input/output error
+tar: ./bin/arch: Cannot open: Input/output error
+tar: ./bin/sh: Cannot open: Input/output error
+tar: ./bin/busybox: Cannot open: Input/output error
+tar: ./lib: Cannot mkdir: Input/output error
+tar: ./lib/apk: Cannot mkdir: Input/output error
+tar: ./lib/apk/exec: Cannot mkdir: Input/output error
+tar: ./lib/apk/db: Cannot mkdir: Input/output error
+tar: ./lib/apk/db/triggers: Cannot open: Input/output error
+tar: ./lib/apk/db/scripts.tar.gz: Cannot open: Input/output error
+tar: ./lib/apk/db/installed: Cannot open: Input/output error
+tar: ./lib/sysctl.d: Cannot mkdir: Input/output error
+tar: ./lib/modules-load.d: Cannot mkdir: Input/output error
+tar: ./lib/firmware: Cannot mkdir: Input/output error
+tar: ./lib/libc.musl-aarch64.so.1: Cannot create symlink to ‘ld-musl-aarch64.so.1’: Input/output error
+tar: ./lib/ld-musl-aarch64.so.1: Cannot open: Input/output error
+tar: ./etc: Cannot mkdir: Input/output error
+tar: ./etc/shadow: Cannot open: Input/output error
+tar: ./etc/ssl1.1: Cannot mkdir: Input/output error
+tar: ./etc/ssl1.1/certs: Cannot open: Input/output error
+tar: ./etc/ssl1.1/cert.pem: Cannot open: Input/output error
+tar: ./etc/ssl: Cannot mkdir: Input/output error
+tar: ./etc/ssl/cert.pem: Cannot create symlink to ‘certs/ca-certificates.crt’: Input/output error
+tar: ./etc/ssl/openssl.cnf.dist: Cannot open: Input/output error
+tar: ./etc/ssl/openssl.cnf: Cannot open: Input/output error
+tar: ./etc/ssl/ct_log_list.cnf.dist: Cannot open: Input/output error
+tar: ./etc/ssl/ct_log_list.cnf: Cannot open: Input/output error
+tar: ./etc/ssl/private: Cannot mkdir: Input/output error
+tar: ./etc/ssl/certs: Cannot mkdir: Input/output error
+tar: ./etc/ssl/certs/ca-certificates.crt: Cannot open: Input/output error
+tar: ./etc/os-release: Cannot open: Input/output error
+tar: ./etc/issue: Cannot open: Input/output error
+tar: ./etc/alpine-release: Cannot open: Input/output error
+tar: ./etc/secfixes.d: Cannot mkdir: Input/output error
+tar: ./etc/secfixes.d/alpine: Cannot open: Input/output error
+tar: ./etc/apk: Cannot mkdir: Input/output error
+tar: ./etc/apk/repositories: Cannot open: Input/output error
+tar: ./etc/apk/world: Cannot open: Input/output error
+tar: ./etc/apk/arch: Cannot open: Input/output error
+tar: ./etc/apk/protected_paths.d: Cannot mkdir: Input/output error
+tar: ./etc/apk/keys: Cannot mkdir: Input/output error
+tar: ./etc/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub: Cannot open: Input/output error
+tar: ./etc/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub: Cannot open: Input/output error
+tar: ./etc/motd: Cannot open: Input/output error
+tar: ./etc/sysctl.d: Cannot mkdir: Input/output error
+tar: ./etc/profile.d: Cannot mkdir: Input/output error
+tar: ./etc/profile.d/color_prompt.sh.disabled: Cannot open: Input/output error
+tar: ./etc/profile.d/README: Cannot open: Input/output error
+tar: ./etc/profile.d/20locale.sh: Cannot open: Input/output error
+tar: ./etc/periodic: Cannot mkdir: Input/output error
+tar: ./etc/periodic/weekly: Cannot mkdir: Input/output error
+tar: ./etc/periodic/monthly: Cannot mkdir: Input/output error
+tar: ./etc/periodic/hourly: Cannot mkdir: Input/output error
+tar: ./etc/periodic/daily: Cannot mkdir: Input/output error
+tar: ./etc/periodic/15min: Cannot mkdir: Input/output error
+tar: ./etc/opt: Cannot mkdir: Input/output error
+tar: ./etc/modules-load.d: Cannot mkdir: Input/output error
+tar: ./etc/modprobe.d: Cannot mkdir: Input/output error
+tar: ./etc/modprobe.d/i386.conf: Cannot open: Input/output error
+tar: ./etc/modprobe.d/blacklist.conf: Cannot open: Input/output error
+tar: ./etc/modprobe.d/aliases.conf: Cannot open: Input/output error
+tar: ./etc/crontabs: Cannot mkdir: Input/output error
+tar: ./etc/crontabs/root: Cannot open: Input/output error
+tar: ./etc/securetty: Cannot open: Input/output error
+tar: ./etc/udhcpc: Cannot mkdir: Input/output error
+tar: ./etc/udhcpc/udhcpc.conf: Cannot open: Input/output error
+tar: ./etc/network: Cannot mkdir: Input/output error
+tar: ./etc/network/if-up.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-up.d/dad: Cannot open: Input/output error
+tar: ./etc/network/if-pre-up.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-pre-down.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-post-up.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-post-down.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-down.d: Cannot mkdir: Input/output error
+tar: ./etc/logrotate.d: Cannot mkdir: Input/output error
+tar: ./etc/logrotate.d/acpid: Cannot open: Input/output error
+tar: ./etc/busybox-paths.d: Cannot mkdir: Input/output error
+tar: ./etc/busybox-paths.d/busybox: Cannot open: Input/output error
+tar: ./etc/sysctl.conf: Cannot open: Input/output error
+tar: ./etc/shells: Cannot open: Input/output error
+tar: ./etc/services: Cannot open: Input/output error
+tar: ./etc/protocols: Cannot open: Input/output error
+tar: ./etc/profile: Cannot open: Input/output error
+tar: ./etc/passwd: Cannot open: Input/output error
+tar: ./etc/nsswitch.conf: Cannot open: Input/output error
+tar: ./etc/mtab: Cannot open: Input/output error
+tar: ./etc/modules: Cannot open: Input/output error
+tar: ./etc/inittab: Cannot open: Input/output error
+tar: ./etc/hosts: Cannot open: Input/output error
+tar: ./etc/hostname: Cannot open: Input/output error
+tar: ./etc/group: Cannot open: Input/output error
+tar: ./etc/fstab: Cannot open: Input/output error
+tar: ./var: Cannot mkdir: Input/output error
+tar: ./var/run: Cannot open: Input/output error
+tar: ./var/lock: Cannot open: Input/output error
+tar: ./var/tmp: Cannot mkdir: Input/output error
+tar: ./var/spool: Cannot mkdir: Input/output error
+tar: ./var/spool/mail: Cannot open: Input/output error
+tar: ./var/spool/cron: Cannot mkdir: Input/output error
+tar: ./var/spool/cron/crontabs: Cannot open: Input/output error
+tar: ./var/opt: Cannot mkdir: Input/output error
+tar: ./var/mail: Cannot mkdir: Input/output error
+tar: ./var/local: Cannot mkdir: Input/output error
+tar: ./var/lib: Cannot mkdir: Input/output error
+tar: ./var/lib/misc: Cannot mkdir: Input/output error
+tar: ./var/empty: Cannot mkdir: Input/output error
+tar: ./var/cache: Cannot mkdir: Input/output error
+tar: ./var/cache/apk: Cannot mkdir: Input/output error
+tar: ./var/cache/misc: Cannot mkdir: Input/output error
+tar: ./var/log: Cannot mkdir: Input/output error
+tar: .: Cannot utime: Input/output error
+tar: .: Cannot change ownership to uid 0, gid 0: Input/output error
+tar: Exiting with failure status due to previous errors
+cp: cannot stat '/mnt/pine_root/etc/resolv.conf': Input/output error
+mount: /mnt/pine_root/dev: can't read superblock on /dev.
+       dmesg(1) may have more information after failed mount system call.
+mount: /mnt/pine_root/proc: can't read superblock on /proc.
+       dmesg(1) may have more information after failed mount system call.
+mount: /mnt/pine_root/sys: can't read superblock on /sys.
+       dmesg(1) may have more information after failed mount system call.
+mount: /mnt/pine_root/run: can't read superblock on /run.
+       dmesg(1) may have more information after failed mount system call.
+./setup_r36ultra.sh: line 86: /mnt/pine_root/etc/apk/repositories: Input/output error
+chroot: failed to run command ‘apk’: Input/output error
+chroot: failed to run command ‘apk’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘adduser’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘addgroup’: Input/output error
+chroot: failed to run command ‘chpasswd’: Input/output error
+./setup_r36ultra.sh: line 98: /mnt/pine_root/etc/sudoers.d/wheel: Input/output error
+mkdir: cannot create directory ‘/mnt/pine_root/usr’: Input/output error
+mkdir: cannot create directory ‘/mnt/pine_root/etc’: Input/output error
+mkdir: cannot create directory ‘/mnt/pine_root/etc’: Input/output error
+cp: target '/mnt/pine_root/usr/local/bin/': Input/output error
+chmod: cannot access '/mnt/pine_root/usr/local/bin/*': Input/output error
+cp: cannot stat '/mnt/pine_root/etc/local.d/': Input/output error
+mkdir: cannot create directory ‘/mnt/pine_root/home’: Input/output error
+./setup_r36ultra.sh: line 111: /mnt/pine_root/etc/init.d/r36-leds: Input/output error
+./setup_r36ultra.sh: line 115: /mnt/pine_root/etc/init.d/r36-input: Input/output error
+chmod: cannot access '/mnt/pine_root/etc/init.d/r36-*': Input/output error
+chroot: failed to run command ‘rc-update’: Input/output error
+mkdir: cannot create directory ‘/mnt/pine_root/etc’: Input/output error
+./setup_r36ultra.sh: line 124: /mnt/pine_root/etc/X11/xorg.conf.d/10-monitor.conf: Input/output error
+sed: can't read /mnt/pine_root/etc/inittab: Input/output error
+./setup_r36ultra.sh: line 132: /mnt/pine_root/home/pine/.profile: Input/output error
+chroot: failed to run command ‘chown’: Input/output error
+umount: /mnt/pine_root/dev: can't write superblock.
+umount: /mnt/pine_root/proc: can't write superblock.
+umount: /mnt/pine_root/sys: can't write superblock.
+umount: /mnt/pine_root/run: can't write superblock.
+./setup_r36ultra.sh: line 149: /mnt/pine_boot/boot.ini: No space left on device
+cp: cannot create regular file '/mnt/pine_boot/Image': No space left on device
+cp: cannot create regular file '/mnt/pine_boot/uInitrd': No space left on device
+cp: cannot create regular file '/mnt/pine_boot/rk3326-r36ultra-linux.dtb': No space left on device
+[INFO] ✓ Compilation complete.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: 0bfe691f-50f7-464b-927c-a4f8aaab1e54
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.57679 s, 5.3 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.27926 s, 3.3 MB/s
+v20260127-10890-gc34e25a150f [http://dl-cdn.alpinelinux.org/alpine/edge/main]
+v20260127-10897-g16d9992a5b1 [http://dl-cdn.alpinelinux.org/alpine/edge/community]
+OK: 28535 distinct packages available
+ERROR: unable to select packages:
+  emulationstation (no such package):
+    required by: world[emulationstation]
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Wiping and partitioning /dev/sdg...
+Error: Partition(s) on /dev/sdg are being used.
+[INFO] Synthesizing boot environment...
+[INFO] Forcefully detaching and wiping /dev/sdg...
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: f80fe29f-8601-4521-937c-b1ab4708ec5c
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+[INFO] Flashing U-Boot...
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.52878 s, 5.5 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.26813 s, 3.3 MB/s
+v20260127-10890-gc34e25a150f [http://dl-cdn.alpinelinux.org/alpine/edge/main]
+v20260127-10897-g16d9992a5b1 [http://dl-cdn.alpinelinux.org/alpine/edge/community]
+v20260127-10881-g9977e02e30a [http://dl-cdn.alpinelinux.org/alpine/edge/testing]
+OK: 35527 distinct packages available
+(  1/404) Installing ncurses-terminfo-base (6.6_p20260516-r0)
+(  2/404) Installing libncursesw (6.6_p20260516-r0)
+(  3/404) Installing dialog (1.3.20260107-r1)
+(  4/404) Installing alsa-ucm-conf (1.2.16-r0)
+(  5/404) Installing alsa-lib (1.2.15.3-r0)
+(  6/404) Installing fftw-single-libs (3.3.11-r0)
+(  7/404) Installing libformw (6.6_p20260516-r0)
+(  8/404) Installing libmenuw (6.6_p20260516-r0)
+(  9/404) Installing libpanelw (6.6_p20260516-r0)
+( 10/404) Installing alsa-utils (1.2.15.2-r1)
+( 11/404) Installing readline (8.3.3-r1)
+( 12/404) Installing bash (5.3.9-r1)
+  Executing bash-5.3.9-r1.post-install
+( 13/404) Installing dbus-libs (1.16.2-r2)
+( 14/404) Installing libexpat (2.8.1-r0)
+( 15/404) Installing dbus (1.16.2-r2)
+  Executing dbus-1.16.2-r2.pre-install
+  Executing dbus-1.16.2-r2.post-install
+( 16/404) Installing dbus-daemon-launch-helper (1.16.2-r2)
+( 17/404) Installing brotli-libs (1.2.0-r1)
+( 18/404) Installing libbz2 (1.0.8-r6)
+( 19/404) Installing libpng (1.6.58-r1)
+( 20/404) Installing freetype (2.14.3-r0)
+( 21/404) Installing fontconfig (2.17.1-r1)
+( 22/404) Installing encodings (1.1.0-r0)
+( 23/404) Installing libfontenc (1.1.9-r0)
+( 24/404) Installing mkfontscale (1.2.4-r0)
+( 25/404) Installing font-dejavu (2.37-r6)
+( 26/404) Installing font-droid-nonlatin (20200215-r5)
+( 27/404) Installing emulationstation-theme-gbz35 (2.11.2-r1)
+( 28/404) Installing libffi (3.5.2-r1)
+( 29/404) Installing libgcc (15.2.0-r5)
+( 30/404) Installing libstdc++ (15.2.0-r5)
+( 31/404) Installing xz-libs (5.8.3-r0)
+( 32/404) Installing libxml2 (2.13.9-r2)
+( 33/404) Installing zstd-libs (1.5.7-r2)
+( 34/404) Installing llvm22-libs (22.1.3-r0)
+( 35/404) Installing spirv-tools (1.4.341.0-r0)
+( 36/404) Installing libxau (1.0.12-r0)
+( 37/404) Installing libmd (1.2.0-r0)
+( 38/404) Installing libbsd (0.12.2-r0)
+( 39/404) Installing libxdmcp (1.1.5-r1)
+( 40/404) Installing libxcb (1.17.0-r2)
+( 41/404) Installing libx11 (1.8.13-r0)
+( 42/404) Installing hwdata-pci (0.408-r0)
+( 43/404) Installing libpciaccess (0.19-r0)
+( 44/404) Installing libdrm (2.4.134-r0)
+( 45/404) Installing libelf (0.195-r0)
+( 46/404) Installing libxshmfence (1.3.3-r0)
+( 47/404) Installing mesa (26.1.1-r1)
+( 48/404) Installing libxext (1.3.7-r0)
+( 49/404) Installing libxxf86vm (1.1.7-r0)
+( 50/404) Installing mesa-gl (26.1.1-r1)
+( 51/404) Installing sdl3 (3.4.10-r0)
+( 52/404) Installing sdl2-compat (2.32.68-r0)
+( 53/404) Installing c-ares (1.34.6-r0)
+( 54/404) Installing libunistring (1.4.2-r0)
+( 55/404) Installing libidn2 (2.3.8-r0)
+( 56/404) Installing nghttp2-libs (1.69.0-r0)
+( 57/404) Installing libpsl (0.21.5-r3)
+( 58/404) Installing libcurl (8.20.0-r1)
+( 59/404) Installing freeimage (3.18.0-r5)
+( 60/404) Installing pugixml (1.15-r0)
+( 61/404) Installing vlc-libs (3.0.23-r4)
+( 62/404) Installing emulationstation (2.11.2-r1)
+( 63/404) Installing libcom_err (1.47.4-r0)
+( 64/404) Installing e2fsprogs-libs (1.47.4-r0)
+( 65/404) Installing libintl (1.0-r0)
+( 66/404) Installing libeconf (0.8.3-r0)
+( 67/404) Installing libblkid (2.42-r0)
+( 68/404) Installing libmount (2.42-r0)
+( 69/404) Installing pcre2 (10.47-r1)
+( 70/404) Installing glib (2.88.1-r0)
+( 71/404) Installing gpm-libs (1.20.7-r6)
+( 72/404) Installing slang (2.3.3-r3)
+( 73/404) Installing libssh2 (1.11.1-r2)
+( 74/404) Installing mc (4.8.33-r3)
+( 75/404) Installing mesa-gbm (26.1.1-r1)
+( 76/404) Installing mesa-dri-gallium (26.1.1-r1)
+( 77/404) Installing nspr (4.38.2-r0)
+( 78/404) Installing sqlite-libs (3.53.2-r0)
+( 79/404) Installing nss (3.124-r0)
+( 80/404) Installing eudev-libs (3.2.14-r6)
+( 81/404) Installing libnm (1.52.2-r0)
+( 82/404) Installing libcap2 (2.78-r0)
+( 83/404) Installing libelogind (255.24-r0)
+( 84/404) Installing jansson (2.15.0-r0)
+( 85/404) Installing libndp (1.9-r1)
+( 86/404) Installing networkmanager (1.52.2-r0)
+  Executing networkmanager-1.52.2-r0.pre-install
+  Executing networkmanager-1.52.2-r0.post-install
+  * 
+  * To modify system network connections without the root password, add your user
+  * account to the 'plugdev' group.
+  * 
+  * If you use wifi, bluetooth, ppp, wwan (mobile broadband), adsl or ovs (Open
+  * vSwitch), install the corresponding plugin: apk add networkmanager-<name>.
+  * 
+  * If you use NetworkManager features which require dnsmasq, you need to install
+  * dnsmasq support: apk add networkmanager-dnsmasq
+  * 
+( 87/404) Installing bridge (1.5-r5)
+( 88/404) Installing ifupdown-ng (0.13.0-r0)
+( 89/404) Installing openrc-user (0.63.1-r0)
+( 90/404) Installing openrc (0.63.1-r0)
+  Executing openrc-0.63.1-r0.post-install
+( 91/404) Installing alsa-utils-openrc (1.2.15.2-r1)
+( 92/404) Installing networkmanager-openrc (1.52.2-r0)
+( 93/404) Installing dbus-openrc (1.16.2-r2)
+( 94/404) Installing libevdev (1.13.6-r0)
+( 95/404) Installing gdbm (1.26-r0)
+( 96/404) Installing mpdecimal (4.0.1-r0)
+( 97/404) Installing python3 (3.14.3-r0)
+( 98/404) Installing python3-pycache-pyc0 (3.14.3-r0)
+( 99/404) Installing pyc (3.14.3-r0)
+(100/404) Installing py3-evdev-pyc (1.9.2-r1)
+(101/404) Installing python3-pyc (3.14.3-r0)
+(102/404) Installing py3-evdev (1.9.2-r1)
+(103/404) Installing retroarch-assets (1.22.0-r0)
+(104/404) Installing retroarch-joypad-autoconfig (1.22.0-r0)
+(105/404) Installing libretro-core-info (1.22.2-r0)
+(106/404) Installing libretro-database (1.22.1-r0)
+(107/404) Installing mesa-gles (26.1.1-r1)
+(108/404) Installing wayland-libs-client (1.25.0-r0)
+(109/404) Installing mesa-egl (26.1.1-r1)
+(110/404) Installing tzdata (2026b-r0)
+(111/404) Installing libgomp (15.2.0-r5)
+(112/404) Installing libb2 (0.98.1-r3)
+(113/404) Installing double-conversion (3.4.0-r0)
+(114/404) Installing icu-data-en (78.1-r0)
+  Executing icu-data-en-78.1-r0.post-install
+  * If you need ICU with non-English locales and legacy charset support, install
+  * package icu-data-full.
+(115/404) Installing icu-libs (78.1-r0)
+(116/404) Installing libpcre2-16 (10.47-r1)
+(117/404) Installing duktape-libs (2.7.0-r3)
+(118/404) Installing libproxy (0.5.12-r0)
+(119/404) Installing qt6-qtbase (6.11.1-r0)
+(120/404) Installing pkgconf (2.5.1-r0)
+(121/404) Installing hicolor-icon-theme (0.18-r0)
+(122/404) Installing libmagic (5.47-r2)
+(123/404) Installing file (5.47-r2)
+(124/404) Installing xprop (1.2.8-r0)
+(125/404) Installing libice (1.1.2-r0)
+(126/404) Installing libuuid (2.42-r0)
+(127/404) Installing libsm (1.2.6-r0)
+(128/404) Installing libxt (1.3.1-r0)
+(129/404) Installing libxmu (1.3.1-r0)
+(130/404) Installing xset (1.2.5-r1)
+(131/404) Installing xdg-utils (1.2.1-r1)
+(132/404) Installing wayland-libs-cursor (1.25.0-r0)
+(133/404) Installing wayland-libs-egl (1.25.0-r0)
+(134/404) Installing xkeyboard-config (2.47-r0)
+(135/404) Installing libxkbcommon (1.13.1-r0)
+(136/404) Installing qt6-qtbase-wayland (6.11.1-r0)
+(137/404) Installing avahi-libs (0.9_rc4-r0)
+(138/404) Installing gmp (6.3.0-r4)
+(139/404) Installing nettle (3.10.2-r0)
+(140/404) Installing libtasn1 (4.21.0-r0)
+(141/404) Installing p11-kit (0.25.5-r2)
+(142/404) Installing gnutls (3.8.13-r0)
+(143/404) Installing cups-libs (2.4.18-r0)
+(144/404) Installing graphite2 (1.3.14-r6)
+(145/404) Installing harfbuzz (13.2.1-r0)
+(146/404) Installing mtdev (1.1.7-r0)
+(147/404) Installing libinput-libs (1.31.3-r0)
+(148/404) Installing libjpeg-turbo (3.1.3-r0)
+(149/404) Installing tslib (1.24-r0)
+(150/404) Installing xcb-util (0.4.1-r3)
+(151/404) Installing xcb-util-image (0.4.1-r0)
+(152/404) Installing xcb-util-renderutil (0.3.10-r0)
+(153/404) Installing xcb-util-cursor (0.1.5-r0)
+(154/404) Installing xcb-util-wm (0.4.2-r0)
+(155/404) Installing xcb-util-keysyms (0.4.1-r0)
+(156/404) Installing libxkbcommon-x11 (1.13.1-r0)
+(157/404) Installing qt6-qtbase-x11 (6.11.1-r0)
+(158/404) Installing libxi (1.8.3-r0)
+(159/404) Installing libSvtAv1Enc (4.1.0-r0)
+(160/404) Installing aom-libs (3.14.1-r0)
+(161/404) Installing libxfixes (6.0.2-r0)
+(162/404) Installing libva (2.23.0-r0)
+(163/404) Installing libvdpau (1.5-r4)
+(164/404) Installing ffmpeg-libavutil (8.1.1-r0)
+(165/404) Installing libdav1d (1.5.3-r0)
+(166/404) Installing libhwy (1.3.0-r0)
+(167/404) Installing lcms2 (2.19-r0)
+(168/404) Installing libjxl (0.11.2-r1)
+(169/404) Installing lame-libs (3.100-r5)
+(170/404) Installing opus (1.6.1-r0)
+(171/404) Installing rav1e-libs (0.8.1-r0)
+(172/404) Installing soxr (0.1.3-r7)
+(173/404) Installing ffmpeg-libswresample (8.1.1-r0)
+(174/404) Installing libogg (1.3.6-r0)
+(175/404) Installing libtheora (1.2.0-r1)
+(176/404) Installing libvorbis (1.3.7-r2)
+(177/404) Installing libvpx (1.15.2-r0)
+(178/404) Installing libsharpyuv (1.6.0-r0)
+(179/404) Installing libwebp (1.6.0-r0)
+(180/404) Installing libwebpmux (1.6.0-r0)
+(181/404) Installing x264-libs (0.164.3108-r1)
+(182/404) Installing numactl (2.0.19-r0)
+(183/404) Installing x265-libs (4.1-r0)
+(184/404) Installing xvidcore (1.3.7-r2)
+(185/404) Installing ffmpeg-libavcodec (8.1.1-r0)
+(186/404) Installing fribidi (1.0.16-r3)
+(187/404) Installing libunibreak (6.1-r0)
+(188/404) Installing libass (0.17.4-r1)
+(189/404) Installing libudfread (1.2.0-r1)
+(190/404) Installing libbluray (1.4.0-r0)
+(191/404) Installing libdvdcss (1.4.3-r0)
+(192/404) Installing libdvdread (6.1.3-r2)
+(193/404) Installing libdvdnav (6.1.1-r1)
+(194/404) Installing mpg123-libs (1.33.5-r0)
+(195/404) Installing libopenmpt (0.8.7-r0)
+(196/404) Installing cjson (1.7.19-r1)
+(197/404) Installing mbedtls3 (3.6.6-r0)
+(198/404) Installing librist (0.2.15-r0)
+(199/404) Installing libsrt (1.5.3-r1)
+(200/404) Installing libssh (0.12.0-r0)
+(201/404) Installing libsodium (1.0.22-r0)
+(202/404) Installing libzmq (4.3.5-r2)
+(203/404) Installing ffmpeg-libavformat (8.1.1-r0)
+(204/404) Installing serd-libs (0.32.8-r0)
+(205/404) Installing zix-libs (0.8.0-r0)
+(206/404) Installing sord-libs (0.16.22-r0)
+(207/404) Installing sratom (0.6.20-r0)
+(208/404) Installing lilv-libs (0.24.26-r1)
+(209/404) Installing libdovi (3.3.2-r0)
+(210/404) Installing glslang-libs (1.4.341.0-r0)
+(211/404) Installing shaderc (2026.1-r0)
+(212/404) Installing vulkan-loader (1.4.347-r0)
+(213/404) Installing libplacebo (7.360.1-r0)
+(214/404) Installing ffmpeg-libswscale (8.1.1-r0)
+(215/404) Installing vidstab (1.1.1-r0)
+(216/404) Installing zimg (3.0.6-r0)
+(217/404) Installing ffmpeg-libavfilter (8.1.1-r0)
+(218/404) Installing libasyncns (0.8-r5)
+(219/404) Installing libltdl (2.6.0-r1)
+(220/404) Installing orc (0.4.41-r0)
+(221/404) Installing libflac (1.4.3-r2)
+(222/404) Installing libsndfile (1.2.2-r2)
+(223/404) Installing speexdsp (1.2.1-r2)
+(224/404) Installing tdb-libs (1.4.15-r1)
+(225/404) Installing libpulse (17.0-r7)
+(226/404) Installing json-c (0.18-r1)
+(227/404) Installing v4l-utils-libs (1.32.0-r1)
+(228/404) Installing ffmpeg-libavdevice (8.1.1-r0)
+(229/404) Installing retroarch (1.22.2-r1)
+(230/404) Installing sudo (1.9.17_p2-r1)
+(231/404) Installing xf86-video-fbdev (0.5.0-r6)
+(232/404) Installing libxrender (0.9.12-r0)
+(233/404) Installing pixman (0.46.4-r0)
+(234/404) Installing cairo (1.18.4-r1)
+(235/404) Installing libatk-1.0 (2.60.4-r0)
+(236/404) Installing gobject-introspection (1.86.0-r1)
+(237/404) Installing shared-mime-info (2.4-r7)
+(238/404) Installing libxcomposite (0.4.7-r0)
+(239/404) Installing libxcursor (1.2.3-r0)
+(240/404) Installing libxdamage (1.1.7-r0)
+(241/404) Installing libxinerama (1.1.6-r0)
+(242/404) Installing libxrandr (1.5.5-r0)
+(243/404) Installing at-spi2-core-libs (2.60.4-r0)
+(244/404) Installing libxtst (1.2.5-r0)
+(245/404) Installing at-spi2-core (2.60.4-r0)
+(246/404) Installing libatk-bridge-2.0 (2.60.4-r0)
+(247/404) Installing cairo-gobject (1.18.4-r1)
+(248/404) Installing libepoxy (1.5.10-r1)
+(249/404) Installing bubblewrap (0.11.2-r0)
+(250/404) Installing libseccomp (2.6.0-r2)
+(251/404) Installing libglycin (2.1.0-r0)
+  Executing libglycin-2.1.0-r0.post-install
+  * glycin loaders got split into their individual subpackages.
+  * By default, only glycin-image-rs & glycin-svg are installed.
+  * Additional loader subpackages are glycin-heif, glycin-jxl & glycin-raw.
+  * 
+  * To install all available loaders, install glycin-loaders-all.
+  * 
+  * Also the glycin-thumbnailer got subpackaged and isn't installed by default.
+(252/404) Installing glycin-image-rs (2.1.0-r0)
+(253/404) Installing libxft (2.3.9-r0)
+(254/404) Installing pango (1.57.1-r0)
+(255/404) Installing librsvg (2.62.3-r0)
+(256/404) Installing glycin-svg (2.1.0-r0)
+(257/404) Installing gdk-pixbuf (2.44.6-r0)
+(258/404) Installing gtk+3.0 (3.24.52-r0)
+(259/404) Installing libxfce4util (4.20.1-r0)
+(260/404) Installing exo-libs (4.20.0-r0)
+(261/404) Installing libgtop (2.41.3-r1)
+(262/404) Installing startup-notification (0.12-r8)
+(263/404) Installing xfconf (4.20.0-r2)
+(264/404) Installing libxfce4ui (4.20.1-r1)
+(265/404) Installing exo (4.20.0-r0)
+(266/404) Installing garcon (4.20.0-r0)
+(267/404) Installing libdisplay-info (0.3.0-r0)
+(268/404) Installing libxres (1.2.3-r0)
+(269/404) Installing libwnck3 (43.3-r0)
+(270/404) Installing libxfce4windowing (4.20.6-r0)
+(271/404) Installing desktop-file-utils (0.28-r0)
+(272/404) Installing gtk-update-icon-cache (3.24.52-r0)
+(273/404) Installing libexif (0.6.26-r0)
+(274/404) Installing libgudev (238-r1)
+(275/404) Installing libnotify (0.8.8-r0)
+(276/404) Installing gtk-layer-shell (0.10.1-r0)
+(277/404) Installing libxfce4panel (4.20.7-r0)
+(278/404) Installing thunar (4.20.8-r0)
+  Executing thunar-4.20.8-r0.post-install
+(279/404) Installing thunar-volman (4.20.0-r0)
+(280/404) Installing ffmpegthumbnailer (2.2.4-r0)
+(281/404) Installing acl-libs (2.3.2-r1)
+(282/404) Installing lz4-libs (1.10.0-r1)
+(283/404) Installing libarchive (3.8.7-r0)
+(284/404) Installing xdg-dbus-proxy (0.1.7-r0)
+(285/404) Installing libgpg-error (1.61-r0)
+(286/404) Installing libgcrypt (1.12.2-r0)
+(287/404) Installing gcr-base (3.41.2-r2)
+(288/404) Installing gcr (3.41.2-r2)
+(289/404) Installing libcap-ng (0.8.5-r2)
+(290/404) Installing gnome-keyring (50.0-r0)
+(291/404) Installing gnome-keyring-openrc (50.0-r0)
+(292/404) Installing skalibs-libs (2.15.0.0-r0)
+(293/404) Installing utmps-libs (0.1.3.3-r0)
+(294/404) Installing linux-pam (1.7.1-r2)
+(295/404) Installing gnome-keyring-pam (50.0-r0)
+(296/404) Installing libyuv (0.0.1928-r0)
+(297/404) Installing libavif (1.4.1-r0)
+(298/404) Installing enchant2-libs (2.8.15-r0)
+(299/404) Installing flite (2.2-r6)
+(300/404) Installing libxv (1.0.13-r0)
+(301/404) Installing cdparanoia-libs (10.2-r14)
+(302/404) Installing graphene (1.10.8-r5)
+(303/404) Installing gstreamer (1.28.3-r0)
+(304/404) Installing gstreamer-ptp-helper (1.28.3-r0)
+(305/404) Installing gst-plugins-base (1.28.3-r0)
+(306/404) Installing openexr-libiex (3.4.11-r0)
+(307/404) Installing imath (3.2.2-r1)
+(308/404) Installing openexr-libilmthread (3.4.11-r0)
+(309/404) Installing libdeflate (1.25-r0)
+(310/404) Installing openexr-libopenexrcore (3.4.11-r0)
+(311/404) Installing openexr-libopenexr (3.4.11-r0)
+(312/404) Installing soundtouch (2.4.1-r0)
+(313/404) Installing libraw1394 (2.1.2-r5)
+(314/404) Installing libusb (1.0.30-r0)
+(315/404) Installing libdc1394 (2.2.7-r0)
+(316/404) Installing libde265 (1.0.18-r0)
+(317/404) Installing directfb (1.7.7-r8)
+(318/404) Installing faac (1.31.1-r0)
+(319/404) Installing faad2-libs (2.11.2-r0)
+(320/404) Installing fdk-aac (2.0.2-r4)
+(321/404) Installing libfreeaptx (0.2.2-r0)
+(322/404) Installing gsm (1.0.23-r0)
+(323/404) Installing libldac (2.0.2.3-r1)
+(324/404) Installing libmodplug (0.8.9.0-r3)
+(325/404) Installing ca-certificates (20260413-r0)
+(326/404) Installing neon (0.36.0-r0)
+(327/404) Installing openal-soft-libs (1.25.2-r0)
+(328/404) Installing openh264 (2.6.0-r0)
+(329/404) Installing openjpeg (2.5.4-r1)
+(330/404) Installing librtmp (2.4_git20190330-r5)
+(331/404) Installing sbc (2.1-r0)
+(332/404) Installing tiff (4.7.1-r0)
+(333/404) Installing spandsp (0.0.6-r5)
+(334/404) Installing libsrtp (2.7.0-r0)
+(335/404) Installing vo-aacenc (0.1.3-r3)
+(336/404) Installing vo-amrwbenc (0.1.3-r3)
+(337/404) Installing libzbar (0.23.93-r2)
+(338/404) Installing gst-plugins-bad (1.28.3-r0)
+(339/404) Installing harfbuzz-icu (13.2.1-r0)
+(340/404) Installing hyphen (2.8.8-r3)
+(341/404) Installing hidapi (0.15.0-r0)
+(342/404) Installing libmanette (0.2.12-r0)
+(343/404) Installing libsecret (0.21.7-r0)
+(344/404) Installing gsettings-desktop-schemas (50.1-r0)
+(345/404) Installing glib-networking (2.80.1-r2)
+(346/404) Installing libsoup3 (3.6.6-r0)
+(347/404) Installing wayland-libs-server (1.25.0-r0)
+(348/404) Installing qt6-qtsvg (6.11.1-r0)
+(349/404) Installing qt6-qtdeclarative (6.11.1-r0)
+(350/404) Installing qt6-qtwayland (6.11.1-r0)
+(351/404) Installing libwebpdemux (1.6.0-r0)
+(352/404) Installing libwoff2common (1.0.2-r4)
+(353/404) Installing libwoff2enc (1.0.2-r4)
+(354/404) Installing libxslt (1.1.43-r3)
+(355/404) Installing webkit2gtk-4.1 (2.48.7-r0)
+ERROR: webkit2gtk-4.1-2.48.7-r0: failed to extract usr/lib/libjavascriptcoregtk-4.1.so.0.8.10: I/O error
+ERROR: webkit2gtk-4.1-2.48.7-r0: I/O error
+(356/404) Installing libgepub (0.7.1-r1)
+(357/404) Installing libgsf (1.14.58-r0)
+(358/404) Installing libopenraw (0.3.7-r3)
+(359/404) Installing poppler (25.12.0-r1)
+(360/404) Installing poppler-glib (25.12.0-r1)
+(361/404) Installing tumbler (4.20.0-r0)
+(362/404) Installing xfce4-appfinder (4.20.0-r0)
+(363/404) Installing json-glib (1.10.8-r0)
+(364/404) Installing libdbusmenu-glib (16.04.0-r6)
+(365/404) Installing libdbusmenu-gtk3 (16.04.0-r6)
+(366/404) Installing xfce4-panel (4.20.7-r0)
+(367/404) Installing polkit-noelogind-libs (127-r2)
+(368/404) Installing polkit-common (127-r2)
+  Executing polkit-common-127-r2.pre-install
+(369/404) Installing polkit-openrc (127-r2)
+(370/404) Installing polkit (127-r2)
+(371/404) Installing upower (1.91.0-r2)
+(372/404) Installing xfce4-power-manager (4.20.0-r1)
+(373/404) Installing iceauth (1.0.11-r0)
+(374/404) Installing dbus-x11 (1.16.2-r2)
+(375/404) Installing libproc2 (4.0.6-r0)
+(376/404) Installing procps-ng (4.0.6-r0)
+(377/404) Installing xfce4-session (4.20.2-r0)
+(378/404) Installing libcolord (1.4.8-r4)
+(379/404) Installing iso-codes (4.20.1-r0)
+(380/404) Installing libxkbfile (1.2.0-r0)
+(381/404) Installing libxklavier (5.4-r8)
+(382/404) Installing xfce4-settings (4.20.4-r0)
+(383/404) Installing yaml (0.2.5-r2)
+(384/404) Installing xfdesktop (4.20.1-r0)
+(385/404) Installing libxpresent (1.0.2-r0)
+(386/404) Installing xfwm4 (4.20.0-r1)
+(387/404) Installing xfce4 (4.20-r0)
+(388/404) Installing libutempter (1.2.3-r1)
+(389/404) Installing adwaita-fonts-sans (50.0-r0)
+(390/404) Installing adwaita-fonts-mono (50.0-r0)
+(391/404) Installing adwaita-fonts (50.0-r0)
+(392/404) Installing vte3-profile (0.84.0-r2)
+(393/404) Installing simdutf (9.0.0-r0)
+(394/404) Installing vte3 (0.84.0-r2)
+(395/404) Installing xfce4-terminal (1.2.0-r0)
+(396/404) Installing font-alias (1.0.6-r0)
+(397/404) Installing util-macros (1.20.2-r0)
+(398/404) Installing font-cursor-misc (1.0.4-r1)
+(399/404) Installing font-misc-misc (1.1.3-r1)
+(400/404) Installing xkbcomp (1.5.0-r0)
+(401/404) Installing xorg-server-common (21.1.23-r0)
+(402/404) Installing libxfont2 (2.0.7-r0)
+(403/404) Installing libxcvt (0.1.3-r0)
+(404/404) Installing xorg-server (21.1.23-r0)
+Executing busybox-1.37.0-r30.trigger
+Executing dbus-1.16.2-r2.trigger
+Executing fontconfig-2.17.1-r1.trigger
+Executing mkfontscale-1.2.4-r0.trigger
+Executing glib-2.88.1-r0.trigger
+Executing shared-mime-info-2.4-r7.trigger
+Executing gtk+3.0-3.24.52-r0.trigger
+Executing desktop-file-utils-0.28-r0.trigger
+Executing gtk-update-icon-cache-3.24.52-r0.trigger
+Executing ca-certificates-20260413-r0.trigger
+1 error; 1273.2 MiB in 419 packages
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: c6333f1f-4d8b-4272-9b4b-c24bad0da03a
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.67877 s, 5.0 MB/s
+Error: Partition(s) 1, 2 on /dev/sdg have been written, but we have been unable to inform the kernel of the change, probably because it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
+[FATAL] Script failed on line 59.
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.54485 s, 2.7 MB/s
+v20260127-10890-gc34e25a150f [http://dl-cdn.alpinelinux.org/alpine/edge/main]
+v20260127-10897-g16d9992a5b1 [http://dl-cdn.alpinelinux.org/alpine/edge/community]
+v20260127-10881-g9977e02e30a [http://dl-cdn.alpinelinux.org/alpine/edge/testing]
+OK: 35527 distinct packages available
+(  1/404) Installing ncurses-terminfo-base (6.6_p20260516-r0)
+(  2/404) Installing libncursesw (6.6_p20260516-r0)
+(  3/404) Installing dialog (1.3.20260107-r1)
+(  4/404) Installing alsa-ucm-conf (1.2.16-r0)
+(  5/404) Installing alsa-lib (1.2.15.3-r0)
+(  6/404) Installing fftw-single-libs (3.3.11-r0)
+(  7/404) Installing libformw (6.6_p20260516-r0)
+(  8/404) Installing libmenuw (6.6_p20260516-r0)
+(  9/404) Installing libpanelw (6.6_p20260516-r0)
+( 10/404) Installing alsa-utils (1.2.15.2-r1)
+( 11/404) Installing readline (8.3.3-r1)
+( 12/404) Installing bash (5.3.9-r1)
+  Executing bash-5.3.9-r1.post-install
+( 13/404) Installing dbus-libs (1.16.2-r2)
+( 14/404) Installing libexpat (2.8.1-r0)
+( 15/404) Installing dbus (1.16.2-r2)
+  Executing dbus-1.16.2-r2.pre-install
+  Executing dbus-1.16.2-r2.post-install
+( 16/404) Installing dbus-daemon-launch-helper (1.16.2-r2)
+( 17/404) Installing brotli-libs (1.2.0-r1)
+( 18/404) Installing libbz2 (1.0.8-r6)
+( 19/404) Installing libpng (1.6.58-r1)
+( 20/404) Installing freetype (2.14.3-r0)
+( 21/404) Installing fontconfig (2.17.1-r1)
+( 22/404) Installing encodings (1.1.0-r0)
+( 23/404) Installing libfontenc (1.1.9-r0)
+( 24/404) Installing mkfontscale (1.2.4-r0)
+( 25/404) Installing font-dejavu (2.37-r6)
+[INFO] Forcefully detaching /dev/sdg...
+[INFO] Wiping and partitioning /dev/sdg...
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.115177 s, 9.1 MB/s
+Error: Partition(s) 2 on /dev/sdg have been written, but we have been unable to inform the kernel of the change, probably because it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
+[FATAL] Script failed on line 71.
+[INFO] Forcefully detaching /dev/sdg...
+[INFO] Wiping and partitioning /dev/sdg...
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0441978 s, 23.7 MB/s
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: f70ddbe3-ffd8-4f9f-8fed-6a879914e41e
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.52174 s, 5.5 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.917839 s, 4.6 MB/s
+tar: ./tmp: Cannot mkdir: Input/output error
+tar: ./sys: Cannot mkdir: Input/output error
+tar: ./srv: Cannot mkdir: Input/output error
+tar: ./run: Cannot mkdir: Input/output error
+tar: ./run/lock: Cannot mkdir: Input/output error
+tar: ./root: Cannot mkdir: Input/output error
+tar: ./proc: Cannot mkdir: Input/output error
+tar: ./opt: Cannot mkdir: Input/output error
+tar: ./mnt: Cannot mkdir: Input/output error
+tar: ./media: Cannot mkdir: Input/output error
+tar: ./media/usb: Cannot mkdir: Input/output error
+tar: ./media/floppy: Cannot mkdir: Input/output error
+tar: ./media/cdrom: Cannot mkdir: Input/output error
+tar: ./home: Cannot mkdir: Input/output error
+tar: ./dev: Cannot mkdir: Input/output error
+tar: ./usr: Cannot mkdir: Input/output error
+tar: ./usr/local: Cannot mkdir: Input/output error
+tar: ./usr/local/share: Cannot mkdir: Input/output error
+tar: ./usr/local/lib: Cannot mkdir: Input/output error
+tar: ./usr/local/bin: Cannot mkdir: Input/output error
+tar: ./usr/lib: Cannot mkdir: Input/output error
+tar: ./usr/lib/libapk.so.3.0.0: Cannot open: Input/output error
+tar: ./usr/lib/libz.so.1.3.2: Cannot open: Input/output error
+tar: ./usr/lib/libz.so.1: Cannot create symlink to ‘libz.so.1.3.2’: Input/output error
+tar: ./usr/lib/libssl.so.3: Cannot open: Input/output error
+tar: ./usr/lib/libcrypto.so.3: Cannot open: Input/output error
+tar: ./usr/lib/ossl-modules: Cannot mkdir: Input/output error
+tar: ./usr/lib/ossl-modules/legacy.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3: Cannot mkdir: Input/output error
+tar: ./usr/lib/engines-3/padlock.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3/loader_attic.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3/capi.so: Cannot open: Input/output error
+tar: ./usr/lib/engines-3/afalg.so: Cannot open: Input/output error
+tar: ./usr/lib/os-release: Cannot open: Input/output error
+tar: ./usr/lib/sysctl.d: Cannot mkdir: Input/output error
+tar: ./usr/lib/sysctl.d/00-alpine.conf: Cannot open: Input/output error
+tar: ./usr/lib/modules-load.d: Cannot mkdir: Input/output error
+tar: ./usr/bin: Cannot mkdir: Input/output error
+tar: ./usr/bin/yes: Cannot open: Input/output error
+tar: ./usr/bin/xzcat: Cannot open: Input/output error
+tar: ./usr/bin/xxd: Cannot open: Input/output error
+tar: ./usr/bin/xargs: Cannot open: Input/output error
+tar: ./usr/bin/whois: Cannot open: Input/output error
+tar: ./usr/bin/whoami: Cannot open: Input/output error
+tar: ./usr/bin/who: Cannot open: Input/output error
+tar: ./usr/bin/which: Cannot open: Input/output error
+tar: ./usr/bin/wget: Cannot open: Input/output error
+tar: ./usr/bin/wc: Cannot open: Input/output error
+tar: ./usr/bin/volname: Cannot open: Input/output error
+tar: ./usr/bin/vlock: Cannot open: Input/output error
+tar: ./usr/bin/vi: Cannot open: Input/output error
+tar: ./usr/bin/uuencode: Cannot open: Input/output error
+tar: ./usr/bin/uudecode: Cannot open: Input/output error
+tar: ./usr/bin/uptime: Cannot open: Input/output error
+tar: ./usr/bin/unzip: Cannot open: Input/output error
+tar: ./usr/bin/unxz: Cannot open: Input/output error
+tar: ./usr/bin/unshare: Cannot open: Input/output error
+tar: ./usr/bin/unlzop: Cannot open: Input/output error
+tar: ./usr/bin/unlzma: Cannot open: Input/output error
+tar: ./usr/bin/unlink: Cannot open: Input/output error
+tar: ./usr/bin/unix2dos: Cannot open: Input/output error
+tar: ./usr/bin/uniq: Cannot open: Input/output error
+tar: ./usr/bin/unexpand: Cannot open: Input/output error
+tar: ./usr/bin/udhcpc6: Cannot open: Input/output error
+tar: ./usr/bin/ttysize: Cannot open: Input/output error
+tar: ./usr/bin/tty: Cannot open: Input/output error
+tar: ./usr/bin/truncate: Cannot open: Input/output error
+tar: ./usr/bin/tree: Cannot open: Input/output error
+tar: ./usr/bin/traceroute6: Cannot open: Input/output error
+tar: ./usr/bin/traceroute: Cannot open: Input/output error
+tar: ./usr/bin/tr: Cannot open: Input/output error
+tar: ./usr/bin/top: Cannot open: Input/output error
+tar: ./usr/bin/timeout: Cannot open: Input/output error
+tar: ./usr/bin/time: Cannot open: Input/output error
+tar: ./usr/bin/test: Cannot open: Input/output error
+tar: ./usr/bin/tee: Cannot open: Input/output error
+tar: ./usr/bin/tail: Cannot open: Input/output error
+tar: ./usr/bin/tac: Cannot open: Input/output error
+tar: ./usr/bin/sum: Cannot open: Input/output error
+tar: ./usr/bin/strings: Cannot open: Input/output error
+tar: ./usr/bin/split: Cannot open: Input/output error
+tar: ./usr/bin/sort: Cannot open: Input/output error
+tar: ./usr/bin/shuf: Cannot open: Input/output error
+tar: ./usr/bin/shred: Cannot open: Input/output error
+tar: ./usr/bin/showkey: Cannot open: Input/output error
+tar: ./usr/bin/sha512sum: Cannot open: Input/output error
+tar: ./usr/bin/sha3sum: Cannot open: Input/output error
+tar: ./usr/bin/sha256sum: Cannot open: Input/output error
+tar: ./usr/bin/sha1sum: Cannot open: Input/output error
+tar: ./usr/bin/setsid: Cannot open: Input/output error
+tar: ./usr/bin/setkeycodes: Cannot open: Input/output error
+tar: ./usr/bin/seq: Cannot open: Input/output error
+tar: ./usr/bin/resize: Cannot open: Input/output error
+tar: ./usr/bin/reset: Cannot open: Input/output error
+tar: ./usr/bin/renice: Cannot open: Input/output error
+tar: ./usr/bin/realpath: Cannot open: Input/output error
+tar: ./usr/bin/readlink: Cannot open: Input/output error
+tar: ./usr/bin/pwdx: Cannot open: Input/output error
+tar: ./usr/bin/pstree: Cannot open: Input/output error
+tar: ./usr/bin/pscan: Cannot open: Input/output error
+tar: ./usr/bin/printf: Cannot open: Input/output error
+tar: ./usr/bin/pmap: Cannot open: Input/output error
+tar: ./usr/bin/pkill: Cannot open: Input/output error
+tar: ./usr/bin/pgrep: Cannot open: Input/output error
+tar: ./usr/bin/paste: Cannot open: Input/output error
+tar: ./usr/bin/passwd: Cannot open: Input/output error
+tar: ./usr/bin/openvt: Cannot open: Input/output error
+tar: ./usr/bin/od: Cannot open: Input/output error
+tar: ./usr/bin/nslookup: Cannot open: Input/output error
+tar: ./usr/bin/nsenter: Cannot open: Input/output error
+tar: ./usr/bin/nproc: Cannot open: Input/output error
+tar: ./usr/bin/nohup: Cannot open: Input/output error
+tar: ./usr/bin/nmeter: Cannot open: Input/output error
+tar: ./usr/bin/nl: Cannot open: Input/output error
+tar: ./usr/bin/nc: Cannot open: Input/output error
+tar: ./usr/bin/mkpasswd: Cannot open: Input/output error
+tar: ./usr/bin/mkfifo: Cannot open: Input/output error
+tar: ./usr/bin/microcom: Cannot open: Input/output error
+tar: ./usr/bin/mesg: Cannot open: Input/output error
+tar: ./usr/bin/md5sum: Cannot open: Input/output error
+tar: ./usr/bin/lzopcat: Cannot open: Input/output error
+tar: ./usr/bin/lzma: Cannot open: Input/output error
+tar: ./usr/bin/lzcat: Cannot open: Input/output error
+tar: ./usr/bin/lsusb: Cannot open: Input/output error
+tar: ./usr/bin/lsof: Cannot open: Input/output error
+tar: ./usr/bin/logger: Cannot open: Input/output error
+tar: ./usr/bin/less: Cannot open: Input/output error
+tar: ./usr/bin/last: Cannot open: Input/output error
+tar: ./usr/bin/killall: Cannot open: Input/output error
+tar: ./usr/bin/ipcs: Cannot open: Input/output error
+tar: ./usr/bin/ipcrm: Cannot open: Input/output error
+tar: ./usr/bin/install: Cannot open: Input/output error
+tar: ./usr/bin/id: Cannot open: Input/output error
+tar: ./usr/bin/hostid: Cannot open: Input/output error
+tar: ./usr/bin/hexdump: Cannot open: Input/output error
+tar: ./usr/bin/head: Cannot open: Input/output error
+tar: ./usr/bin/hd: Cannot open: Input/output error
+tar: ./usr/bin/groups: Cannot open: Input/output error
+tar: ./usr/bin/fuser: Cannot open: Input/output error
+tar: ./usr/bin/free: Cannot open: Input/output error
+tar: ./usr/bin/fold: Cannot open: Input/output error
+tar: ./usr/bin/flock: Cannot open: Input/output error
+tar: ./usr/bin/find: Cannot open: Input/output error
+tar: ./usr/bin/fallocate: Cannot open: Input/output error
+tar: ./usr/bin/factor: Cannot open: Input/output error
+tar: ./usr/bin/expr: Cannot open: Input/output error
+tar: ./usr/bin/expand: Cannot open: Input/output error
+tar: ./usr/bin/env: Cannot open: Input/output error
+tar: ./usr/bin/eject: Cannot open: Input/output error
+tar: ./usr/bin/du: Cannot open: Input/output error
+tar: ./usr/bin/dos2unix: Cannot open: Input/output error
+tar: ./usr/bin/dirname: Cannot open: Input/output error
+tar: ./usr/bin/diff: Cannot open: Input/output error
+tar: ./usr/bin/deallocvt: Cannot open: Input/output error
+tar: ./usr/bin/dc: Cannot open: Input/output error
+tar: ./usr/bin/cut: Cannot open: Input/output error
+tar: ./usr/bin/cryptpw: Cannot open: Input/output error
+tar: ./usr/bin/crontab: Cannot open: Input/output error
+tar: ./usr/bin/cpio: Cannot open: Input/output error
+tar: ./usr/bin/comm: Cannot open: Input/output error
+tar: ./usr/bin/cmp: Cannot open: Input/output error
+tar: ./usr/bin/clear: Cannot open: Input/output error
+tar: ./usr/bin/cksum: Cannot open: Input/output error
+tar: ./usr/bin/chvt: Cannot open: Input/output error
+tar: ./usr/bin/cal: Cannot open: Input/output error
+tar: ./usr/bin/bzip2: Cannot open: Input/output error
+tar: ./usr/bin/bzcat: Cannot open: Input/output error
+tar: ./usr/bin/bunzip2: Cannot open: Input/output error
+tar: ./usr/bin/beep: Cannot open: Input/output error
+tar: ./usr/bin/bc: Cannot open: Input/output error
+tar: ./usr/bin/basename: Cannot open: Input/output error
+tar: ./usr/bin/awk: Cannot open: Input/output error
+tar: ./usr/bin/[[: Cannot open: Input/output error
+tar: ./usr/bin/[: Cannot open: Input/output error
+tar: ./usr/bin/ldd: Cannot open: Input/output error
+tar: ./usr/bin/iconv: Cannot open: Input/output error
+tar: ./usr/bin/getent: Cannot open: Input/output error
+tar: ./usr/bin/getconf: Cannot open: Input/output error
+tar: ./usr/bin/scanelf: Cannot open: Input/output error
+tar: ./usr/bin/ssl_client: Cannot open: Input/output error
+tar: ./usr/share: Cannot mkdir: Input/output error
+tar: ./usr/share/apk: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86_64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/s390x: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/riscv64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/ppc64le: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/mips64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/loongarch64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/loongarch64/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armv7: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armhf: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/aarch64: Cannot mkdir: Input/output error
+tar: ./usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub: Cannot open: Input/output error
+tar: ./usr/share/misc: Cannot mkdir: Input/output error
+tar: ./usr/share/udhcpc: Cannot mkdir: Input/output error
+tar: ./usr/share/udhcpc/default.script: Cannot open: Input/output error
+tar: ./usr/sbin: Cannot mkdir: Input/output error
+tar: ./usr/sbin/setlogcons: Cannot open: Input/output error
+tar: ./usr/sbin/setfont: Cannot open: Input/output error
+tar: ./usr/sbin/sendmail: Cannot open: Input/output error
+tar: ./usr/sbin/rfkill: Cannot open: Input/output error
+tar: ./usr/sbin/remove-shell: Cannot open: Input/output error
+tar: ./usr/sbin/readahead: Cannot open: Input/output error
+tar: ./usr/sbin/rdev: Cannot open: Input/output error
+tar: ./usr/sbin/rdate: Cannot open: Input/output error
+tar: ./usr/sbin/partprobe: Cannot open: Input/output error
+tar: ./usr/sbin/ntpd: Cannot open: Input/output error
+tar: ./usr/sbin/nbd-client: Cannot open: Input/output error
+tar: ./usr/sbin/nandwrite: Cannot open: Input/output error
+tar: ./usr/sbin/nanddump: Cannot open: Input/output error
+tar: ./usr/sbin/loadfont: Cannot open: Input/output error
+tar: ./usr/sbin/killall5: Cannot open: Input/output error
+tar: ./usr/sbin/fbset: Cannot open: Input/output error
+tar: ./usr/sbin/ether-wake: Cannot open: Input/output error
+tar: ./usr/sbin/deluser: Cannot open: Input/output error
+tar: ./usr/sbin/delgroup: Cannot open: Input/output error
+tar: ./usr/sbin/crond: Cannot open: Input/output error
+tar: ./usr/sbin/chroot: Cannot open: Input/output error
+tar: ./usr/sbin/chpasswd: Cannot open: Input/output error
+tar: ./usr/sbin/brctl: Cannot open: Input/output error
+tar: ./usr/sbin/arping: Cannot open: Input/output error
+tar: ./usr/sbin/adduser: Cannot open: Input/output error
+tar: ./usr/sbin/addgroup: Cannot open: Input/output error
+tar: ./usr/sbin/add-shell: Cannot open: Input/output error
+tar: ./sbin: Cannot mkdir: Input/output error
+tar: ./sbin/zcip: Cannot open: Input/output error
+tar: ./sbin/watchdog: Cannot open: Input/output error
+tar: ./sbin/vconfig: Cannot open: Input/output error
+tar: ./sbin/udhcpc: Cannot open: Input/output error
+tar: ./sbin/tunctl: Cannot open: Input/output error
+tar: ./sbin/syslogd: Cannot open: Input/output error
+tar: ./sbin/sysctl: Cannot open: Input/output error
+tar: ./sbin/switch_root: Cannot open: Input/output error
+tar: ./sbin/swapon: Cannot open: Input/output error
+tar: ./sbin/swapoff: Cannot open: Input/output error
+tar: ./sbin/slattach: Cannot open: Input/output error
+tar: ./sbin/setconsole: Cannot open: Input/output error
+tar: ./sbin/route: Cannot open: Input/output error
+tar: ./sbin/rmmod: Cannot open: Input/output error
+tar: ./sbin/reboot: Cannot open: Input/output error
+tar: ./sbin/raidautorun: Cannot open: Input/output error
+tar: ./sbin/poweroff: Cannot open: Input/output error
+tar: ./sbin/pivot_root: Cannot open: Input/output error
+tar: ./sbin/nologin: Cannot open: Input/output error
+tar: ./sbin/nameif: Cannot open: Input/output error
+tar: ./sbin/modprobe: Cannot open: Input/output error
+tar: ./sbin/modinfo: Cannot open: Input/output error
+tar: ./sbin/mkswap: Cannot open: Input/output error
+tar: ./sbin/mkfs.vfat: Cannot open: Input/output error
+tar: ./sbin/mkdosfs: Cannot open: Input/output error
+tar: ./sbin/mdev: Cannot open: Input/output error
+tar: ./sbin/lsmod: Cannot open: Input/output error
+tar: ./sbin/losetup: Cannot open: Input/output error
+tar: ./sbin/logread: Cannot open: Input/output error
+tar: ./sbin/loadkmap: Cannot open: Input/output error
+tar: ./sbin/klogd: Cannot open: Input/output error
+tar: ./sbin/iptunnel: Cannot open: Input/output error
+tar: ./sbin/iprule: Cannot open: Input/output error
+tar: ./sbin/iproute: Cannot open: Input/output error
+tar: ./sbin/ipneigh: Cannot open: Input/output error
+tar: ./sbin/iplink: Cannot open: Input/output error
+tar: ./sbin/ipaddr: Cannot open: Input/output error
+tar: ./sbin/ip: Cannot open: Input/output error
+tar: ./sbin/insmod: Cannot open: Input/output error
+tar: ./sbin/inotifyd: Cannot open: Input/output error
+tar: ./sbin/init: Cannot open: Input/output error
+tar: ./sbin/ifup: Cannot open: Input/output error
+tar: ./sbin/ifenslave: Cannot open: Input/output error
+tar: ./sbin/ifdown: Cannot open: Input/output error
+tar: ./sbin/ifconfig: Cannot open: Input/output error
+tar: ./sbin/hwclock: Cannot open: Input/output error
+tar: ./sbin/halt: Cannot open: Input/output error
+tar: ./sbin/getty: Cannot open: Input/output error
+tar: ./sbin/fstrim: Cannot open: Input/output error
+tar: ./sbin/fsck: Cannot open: Input/output error
+tar: ./sbin/findfs: Cannot open: Input/output error
+tar: ./sbin/fdisk: Cannot open: Input/output error
+tar: ./sbin/fbsplash: Cannot open: Input/output error
+tar: ./sbin/depmod: Cannot open: Input/output error
+tar: ./sbin/blockdev: Cannot open: Input/output error
+tar: ./sbin/blkid: Cannot open: Input/output error
+tar: ./sbin/blkdiscard: Cannot open: Input/output error
+tar: ./sbin/arp: Cannot open: Input/output error
+tar: ./sbin/adjtimex: Cannot open: Input/output error
+tar: ./sbin/acpid: Cannot open: Input/output error
+tar: ./sbin/ldconfig: Cannot open: Input/output error
+tar: ./sbin/apk: Cannot open: Input/output error
+tar: ./bin: Cannot mkdir: Input/output error
+tar: ./bin/zcat: Cannot open: Input/output error
+tar: ./bin/watch: Cannot open: Input/output error
+tar: ./bin/usleep: Cannot open: Input/output error
+tar: ./bin/uname: Cannot open: Input/output error
+tar: ./bin/umount: Cannot open: Input/output error
+tar: ./bin/true: Cannot open: Input/output error
+tar: ./bin/touch: Cannot open: Input/output error
+tar: ./bin/tar: Cannot open: Input/output error
+tar: ./bin/sync: Cannot open: Input/output error
+tar: ./bin/su: Cannot open: Input/output error
+tar: ./bin/stty: Cannot open: Input/output error
+tar: ./bin/stat: Cannot open: Input/output error
+tar: ./bin/sleep: Cannot open: Input/output error
+tar: ./bin/setserial: Cannot open: Input/output error
+tar: ./bin/setpriv: Cannot open: Input/output error
+tar: ./bin/sed: Cannot open: Input/output error
+tar: ./bin/run-parts: Cannot open: Input/output error
+tar: ./bin/rmdir: Cannot open: Input/output error
+tar: ./bin/rm: Cannot open: Input/output error
+tar: ./bin/rev: Cannot open: Input/output error
+tar: ./bin/reformime: Cannot open: Input/output error
+tar: ./bin/pwd: Cannot open: Input/output error
+tar: ./bin/ps: Cannot open: Input/output error
+tar: ./bin/printenv: Cannot open: Input/output error
+tar: ./bin/pipe_progress: Cannot open: Input/output error
+tar: ./bin/ping6: Cannot open: Input/output error
+tar: ./bin/ping: Cannot open: Input/output error
+tar: ./bin/pidof: Cannot open: Input/output error
+tar: ./bin/nice: Cannot open: Input/output error
+tar: ./bin/netstat: Cannot open: Input/output error
+tar: ./bin/mv: Cannot open: Input/output error
+tar: ./bin/mpstat: Cannot open: Input/output error
+tar: ./bin/mountpoint: Cannot open: Input/output error
+tar: ./bin/mount: Cannot open: Input/output error
+tar: ./bin/more: Cannot open: Input/output error
+tar: ./bin/mktemp: Cannot open: Input/output error
+tar: ./bin/mknod: Cannot open: Input/output error
+tar: ./bin/mkdir: Cannot open: Input/output error
+tar: ./bin/makemime: Cannot open: Input/output error
+tar: ./bin/lzop: Cannot open: Input/output error
+tar: ./bin/lsattr: Cannot open: Input/output error
+tar: ./bin/ls: Cannot open: Input/output error
+tar: ./bin/login: Cannot open: Input/output error
+tar: ./bin/ln: Cannot open: Input/output error
+tar: ./bin/linux64: Cannot open: Input/output error
+tar: ./bin/linux32: Cannot open: Input/output error
+tar: ./bin/link: Cannot open: Input/output error
+tar: ./bin/kill: Cannot open: Input/output error
+tar: ./bin/kbd_mode: Cannot open: Input/output error
+tar: ./bin/ipcalc: Cannot open: Input/output error
+tar: ./bin/iostat: Cannot open: Input/output error
+tar: ./bin/ionice: Cannot open: Input/output error
+tar: ./bin/hostname: Cannot open: Input/output error
+tar: ./bin/gzip: Cannot open: Input/output error
+tar: ./bin/gunzip: Cannot open: Input/output error
+tar: ./bin/grep: Cannot open: Input/output error
+tar: ./bin/getopt: Cannot open: Input/output error
+tar: ./bin/fsync: Cannot open: Input/output error
+tar: ./bin/fgrep: Cannot open: Input/output error
+tar: ./bin/fdflush: Cannot open: Input/output error
+tar: ./bin/fatattr: Cannot open: Input/output error
+tar: ./bin/false: Cannot open: Input/output error
+tar: ./bin/egrep: Cannot open: Input/output error
+tar: ./bin/echo: Cannot open: Input/output error
+tar: ./bin/dumpkmap: Cannot open: Input/output error
+tar: ./bin/dnsdomainname: Cannot open: Input/output error
+tar: ./bin/dmesg: Cannot open: Input/output error
+tar: ./bin/df: Cannot open: Input/output error
+tar: ./bin/dd: Cannot open: Input/output error
+tar: ./bin/date: Cannot open: Input/output error
+tar: ./bin/cp: Cannot open: Input/output error
+tar: ./bin/chown: Cannot open: Input/output error
+tar: ./bin/chmod: Cannot open: Input/output error
+tar: ./bin/chgrp: Cannot open: Input/output error
+tar: ./bin/chattr: Cannot open: Input/output error
+tar: ./bin/cat: Cannot open: Input/output error
+tar: ./bin/bbconfig: Cannot open: Input/output error
+tar: ./bin/base64: Cannot open: Input/output error
+tar: ./bin/ash: Cannot open: Input/output error
+tar: ./bin/arch: Cannot open: Input/output error
+tar: ./bin/sh: Cannot open: Input/output error
+tar: ./bin/busybox: Cannot open: Input/output error
+tar: ./lib: Cannot mkdir: Input/output error
+tar: ./lib/apk: Cannot mkdir: Input/output error
+tar: ./lib/apk/exec: Cannot mkdir: Input/output error
+tar: ./lib/apk/db: Cannot mkdir: Input/output error
+tar: ./lib/apk/db/triggers: Cannot open: Input/output error
+tar: ./lib/apk/db/scripts.tar.gz: Cannot open: Input/output error
+tar: ./lib/apk/db/installed: Cannot open: Input/output error
+tar: ./lib/sysctl.d: Cannot mkdir: Input/output error
+tar: ./lib/modules-load.d: Cannot mkdir: Input/output error
+tar: ./lib/firmware: Cannot mkdir: Input/output error
+tar: ./lib/libc.musl-aarch64.so.1: Cannot create symlink to ‘ld-musl-aarch64.so.1’: Input/output error
+tar: ./lib/ld-musl-aarch64.so.1: Cannot open: Input/output error
+tar: ./etc: Cannot mkdir: Input/output error
+tar: ./etc/shadow: Cannot open: Input/output error
+tar: ./etc/ssl1.1: Cannot mkdir: Input/output error
+tar: ./etc/ssl1.1/certs: Cannot open: Input/output error
+tar: ./etc/ssl1.1/cert.pem: Cannot open: Input/output error
+tar: ./etc/ssl: Cannot mkdir: Input/output error
+tar: ./etc/ssl/cert.pem: Cannot create symlink to ‘certs/ca-certificates.crt’: Input/output error
+tar: ./etc/ssl/openssl.cnf.dist: Cannot open: Input/output error
+tar: ./etc/ssl/openssl.cnf: Cannot open: Input/output error
+tar: ./etc/ssl/ct_log_list.cnf.dist: Cannot open: Input/output error
+tar: ./etc/ssl/ct_log_list.cnf: Cannot open: Input/output error
+tar: ./etc/ssl/private: Cannot mkdir: Input/output error
+tar: ./etc/ssl/certs: Cannot mkdir: Input/output error
+tar: ./etc/ssl/certs/ca-certificates.crt: Cannot open: Input/output error
+tar: ./etc/os-release: Cannot open: Input/output error
+tar: ./etc/issue: Cannot open: Input/output error
+tar: ./etc/alpine-release: Cannot open: Input/output error
+tar: ./etc/secfixes.d: Cannot mkdir: Input/output error
+tar: ./etc/secfixes.d/alpine: Cannot open: Input/output error
+tar: ./etc/apk: Cannot mkdir: Input/output error
+tar: ./etc/apk/repositories: Cannot open: Input/output error
+tar: ./etc/apk/world: Cannot open: Input/output error
+tar: ./etc/apk/arch: Cannot open: Input/output error
+tar: ./etc/apk/protected_paths.d: Cannot mkdir: Input/output error
+tar: ./etc/apk/keys: Cannot mkdir: Input/output error
+tar: ./etc/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub: Cannot open: Input/output error
+tar: ./etc/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub: Cannot open: Input/output error
+tar: ./etc/motd: Cannot open: Input/output error
+tar: ./etc/sysctl.d: Cannot mkdir: Input/output error
+tar: ./etc/profile.d: Cannot mkdir: Input/output error
+tar: ./etc/profile.d/color_prompt.sh.disabled: Cannot open: Input/output error
+tar: ./etc/profile.d/README: Cannot open: Input/output error
+tar: ./etc/profile.d/20locale.sh: Cannot open: Input/output error
+tar: ./etc/periodic: Cannot mkdir: Input/output error
+tar: ./etc/periodic/weekly: Cannot mkdir: Input/output error
+tar: ./etc/periodic/monthly: Cannot mkdir: Input/output error
+tar: ./etc/periodic/hourly: Cannot mkdir: Input/output error
+tar: ./etc/periodic/daily: Cannot mkdir: Input/output error
+tar: ./etc/periodic/15min: Cannot mkdir: Input/output error
+tar: ./etc/opt: Cannot mkdir: Input/output error
+tar: ./etc/modules-load.d: Cannot mkdir: Input/output error
+tar: ./etc/modprobe.d: Cannot mkdir: Input/output error
+tar: ./etc/modprobe.d/i386.conf: Cannot open: Input/output error
+tar: ./etc/modprobe.d/blacklist.conf: Cannot open: Input/output error
+tar: ./etc/modprobe.d/aliases.conf: Cannot open: Input/output error
+tar: ./etc/crontabs: Cannot mkdir: Input/output error
+tar: ./etc/crontabs/root: Cannot open: Input/output error
+tar: ./etc/securetty: Cannot open: Input/output error
+tar: ./etc/udhcpc: Cannot mkdir: Input/output error
+tar: ./etc/udhcpc/udhcpc.conf: Cannot open: Input/output error
+tar: ./etc/network: Cannot mkdir: Input/output error
+tar: ./etc/network/if-up.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-up.d/dad: Cannot open: Input/output error
+tar: ./etc/network/if-pre-up.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-pre-down.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-post-up.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-post-down.d: Cannot mkdir: Input/output error
+tar: ./etc/network/if-down.d: Cannot mkdir: Input/output error
+tar: ./etc/logrotate.d: Cannot mkdir: Input/output error
+tar: ./etc/logrotate.d/acpid: Cannot open: Input/output error
+tar: ./etc/busybox-paths.d: Cannot mkdir: Input/output error
+tar: ./etc/busybox-paths.d/busybox: Cannot open: Input/output error
+tar: ./etc/sysctl.conf: Cannot open: Input/output error
+tar: ./etc/shells: Cannot open: Input/output error
+tar: ./etc/services: Cannot open: Input/output error
+tar: ./etc/protocols: Cannot open: Input/output error
+tar: ./etc/profile: Cannot open: Input/output error
+tar: ./etc/passwd: Cannot open: Input/output error
+tar: ./etc/nsswitch.conf: Cannot open: Input/output error
+tar: ./etc/mtab: Cannot open: Input/output error
+tar: ./etc/modules: Cannot open: Input/output error
+tar: ./etc/inittab: Cannot open: Input/output error
+tar: ./etc/hosts: Cannot open: Input/output error
+tar: ./etc/hostname: Cannot open: Input/output error
+tar: ./etc/group: Cannot open: Input/output error
+tar: ./etc/fstab: Cannot open: Input/output error
+tar: ./var: Cannot mkdir: Input/output error
+tar: ./var/run: Cannot open: Input/output error
+tar: ./var/lock: Cannot open: Input/output error
+tar: ./var/tmp: Cannot mkdir: Input/output error
+tar: ./var/spool: Cannot mkdir: Input/output error
+tar: ./var/spool/mail: Cannot open: Input/output error
+tar: ./var/spool/cron: Cannot mkdir: Input/output error
+tar: ./var/spool/cron/crontabs: Cannot open: Input/output error
+tar: ./var/opt: Cannot mkdir: Input/output error
+tar: ./var/mail: Cannot mkdir: Input/output error
+tar: ./var/local: Cannot mkdir: Input/output error
+tar: ./var/lib: Cannot mkdir: Input/output error
+tar: ./var/lib/misc: Cannot mkdir: Input/output error
+tar: ./var/empty: Cannot mkdir: Input/output error
+tar: ./var/cache: Cannot mkdir: Input/output error
+tar: ./var/cache/apk: Cannot mkdir: Input/output error
+tar: ./var/cache/misc: Cannot mkdir: Input/output error
+tar: ./var/log: Cannot mkdir: Input/output error
+tar: .: Cannot utime: Input/output error
+tar: .: Cannot change ownership to uid 0, gid 0: Input/output error
+tar: Exiting with failure status due to previous errors
+[FATAL] Script failed on line 94.
+[INFO] Forcefully detaching /dev/sdg...
+[INFO] Wiping and partitioning /dev/sdg...
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0380357 s, 27.6 MB/s
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: d8630f5b-f836-4b31-a15e-35f2af72209e
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+[INFO] Flashing U-Boot...
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.56217 s, 5.3 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.992391 s, 4.2 MB/s
+[INFO] Extracting RootFS...
+[INFO] Installing packages...
+v3.23.4-341-g3bb236994a2 [https://dl-cdn.alpinelinux.org/alpine/v3.23/main]
+v3.23.4-340-gfab8d7d1ed2 [https://dl-cdn.alpinelinux.org/alpine/v3.23/community]
+OK: 27439 distinct packages available
+ERROR: unable to select packages:
+  emulationstation (no such package):
+    required by: world[emulationstation]
+[FATAL] Script failed on line 88.
+[INFO] Forcing release of all mount points on /dev/sdg...
+[INFO] Wiping and partitioning /dev/sdg...
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0394495 s, 26.6 MB/s
+Error: Partition(s) 1 on /dev/sdg have been written, but we have been unable to inform the kernel of the change, probably because it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
+[FATAL] Script failed on line 49.
+[INFO] Aggressively killing processes and unmounting /dev/sdg...
+[INFO] Wiping and partitioning /dev/sdg...
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0489256 s, 21.4 MB/s
+mkfs.fat 4.2 (2021-01-31)
+mke2fs 1.47.0 (5-Feb-2023)
+Creating filesystem with 7550720 4k blocks and 1888656 inodes
+Filesystem UUID: 4a58fb78-efb3-4da9-b0fb-8f5d418464bf
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000
+
+Allocating group tables:   0/231       done                            
+Writing inode tables:   0/231       done                            
+Writing superblocks and filesystem accounting information:   0/231       done
+
+[INFO] Aggressively killing processes and unmounting /dev/sdg...
+16320+0 records in
+16320+0 records out
+8355840 bytes (8.4 MB, 8.0 MiB) copied, 1.70294 s, 4.9 MB/s
+8192+0 records in
+8192+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 1.25668 s, 3.3 MB/s
+[INFO] Extracting RootFS...
+v3.23.4-341-g3bb236994a2 [https://dl-cdn.alpinelinux.org/alpine/v3.23/main]
+v3.23.4-340-gfab8d7d1ed2 [https://dl-cdn.alpinelinux.org/alpine/v3.23/community]
+OK: 27439 distinct packages available
+ERROR: unable to select packages:
+  emulationstation (no such package):
+    required by: world[emulationstation]
+[FATAL] Script failed on line 91.
